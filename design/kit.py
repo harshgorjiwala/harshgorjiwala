@@ -40,7 +40,7 @@ TOKENS_CSS = """
     --accent:#34C6AE; --accent-hover:#5EE0C9; --on-accent:#04201B; --accent-soft:rgba(52,198,174,.16);
     --success:#47CD89; --warning:#FDB022; --info:#A48AFB; --destructive:#F97066;
     --tag-success:rgba(71,205,137,.14); --tag-warning:rgba(253,176,34,.14); --tag-info:rgba(164,138,251,.14); --tag-neutral:rgba(255,255,255,.12); --tag-neutral-text:#D0D5DD;
-    --glass:rgba(22,26,34,.62); --glass-border:rgba(255,255,255,.10); --glass-highlight:rgba(255,255,255,.08);
+    --glass:rgba(38,44,56,.74); --glass-border:rgba(255,255,255,.16); --glass-highlight:rgba(255,255,255,.18);
     --track:rgba(255,255,255,.08); --pill:#2E3440; --pill-neutral:rgba(255,255,255,.10); --border:rgba(255,255,255,.12);
     --orb-blue:#1F3A5F; --orb-mint:#16463C; --orb-lilac:#332C5C; --orb-opacity:.9;
     --ink:#F5F7FA; --mock-ground:#0F1219;
