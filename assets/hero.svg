@@ -1,244 +1,275 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-labelledby="heroTitle heroDesc">
-<title id="heroTitle">Harsh Gorjiwala — founder building vertical SaaS</title>
-<desc id="heroDesc">Animated banner with a floating product dashboard mock: live chart, toggle, and a cursor pressing Deploy.</desc>
-<defs>
-  <clipPath id="frame"><rect width="1000" height="340" rx="24"/></clipPath>
-  <clipPath id="winClip"><rect width="340" height="236" rx="14"/></clipPath>
-  <clipPath id="typeClip"><rect class="typeRect" x="64" y="192" width="422" height="30"/></clipPath>
-
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#090c14"/>
-    <stop offset="1" stop-color="#0f1526"/>
-  </linearGradient>
-  <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#f1f4fb"/>
-    <stop offset="0.55" stop-color="#9ec5ff"/>
-    <stop offset="1" stop-color="#c4b5fd"/>
-  </linearGradient>
-  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#22d3ee"/>
-    <stop offset="1" stop-color="#818cf8"/>
-  </linearGradient>
-  <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#818cf8" stop-opacity="0.38"/>
-    <stop offset="1" stop-color="#818cf8" stop-opacity="0"/>
-  </linearGradient>
-  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
-    <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.09"/>
-    <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-  </linearGradient>
-  <radialGradient id="orbIndigo"><stop offset="0" stop-color="#6366f1" stop-opacity="0.75"/><stop offset="1" stop-color="#6366f1" stop-opacity="0"/></radialGradient>
-  <radialGradient id="orbCyan"><stop offset="0" stop-color="#22d3ee" stop-opacity="0.55"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
-  <radialGradient id="orbViolet"><stop offset="0" stop-color="#a855f7" stop-opacity="0.6"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></radialGradient>
-  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.1" fill="#ffffff" fill-opacity="0.07"/></pattern>
-  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-</defs>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="1000" height="480" role="img" aria-labelledby="t d">
+<title id="t">Harsh Gorjiwala — founder building vertical SaaS products in Hamilton, Ontario</title>
+<desc id="d">Light hero with soft colour orbs, a floating glass navigation capsule, the headline “One backbone. Many products.”, and a mock of a pharmacy inbox console with a glass icon rail, neutral segmented control, opaque list and a toast.</desc>
 <style>
-  .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  .mono { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+@font-face{font-family:'Geist';font-style:normal;font-weight:400;src:url(data:font/woff2;base64,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) format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:500;src:url(data:font/woff2;base64,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) format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:600;src:url(data:font/woff2;base64,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) format('woff2')}
 
-  /* ambient orbs */
-  .orb1 { animation: drift1 16s ease-in-out infinite; }
-  .orb2 { animation: drift2 19s ease-in-out infinite; }
-  .orb3 { animation: drift3 14s ease-in-out infinite; }
-  @keyframes drift1 { 0%,100% { transform: translate(0,0);} 50% { transform: translate(70px,40px);} }
-  @keyframes drift2 { 0%,100% { transform: translate(0,0);} 50% { transform: translate(-60px,-50px);} }
-  @keyframes drift3 { 0%,100% { transform: translate(0,0);} 50% { transform: translate(40px,60px);} }
+:root{
+  --bg:#FBFBFD; --ground:#F2F4F7; --surface:#FFFFFF; --elevated:#FFFFFF; --paper:#FFFFFF;
+  --label:#101828; --secondary:#475467; --tertiary:#667085; --separator:#E4E7EC;
+  --accent:#0B7A69; --accent-hover:#096B5C; --on-accent:#FFFFFF; --accent-soft:rgba(11,122,105,.12);
+  --success:#067647; --warning:#B54708; --info:#5925DC; --destructive:#B42318;
+  --tag-success:#ECFDF3; --tag-warning:#FFFAEB; --tag-info:#F4F3FF; --tag-neutral:#F2F4F7; --tag-neutral-text:#344054;
+  --glass:rgba(255,255,255,.62); --glass-border:rgba(16,24,40,.08); --glass-highlight:rgba(255,255,255,.9);
+  --track:rgba(16,24,40,.06); --pill:#FFFFFF; --pill-neutral:rgba(16,24,40,.07); --border:rgba(16,24,40,.12);
+  --orb-blue:#C3DDF5; --orb-mint:#CBEDE4; --orb-lilac:#DEDAF6; --orb-opacity:1;
+  --ink:#101828; --mock-ground:#F2F4F7;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0B0D12; --ground:#0B0D12; --surface:#161A22; --elevated:#1E232D;
+    --label:#F5F7FA; --secondary:#A6AFBD; --tertiary:#8A94A6; --separator:#2A303B;
+    --accent:#34C6AE; --accent-hover:#5EE0C9; --on-accent:#04201B; --accent-soft:rgba(52,198,174,.16);
+    --success:#47CD89; --warning:#FDB022; --info:#A48AFB; --destructive:#F97066;
+    --tag-success:rgba(71,205,137,.14); --tag-warning:rgba(253,176,34,.14); --tag-info:rgba(164,138,251,.14); --tag-neutral:rgba(255,255,255,.08); --tag-neutral-text:#D0D5DD;
+    --glass:rgba(22,26,34,.62); --glass-border:rgba(255,255,255,.10); --glass-highlight:rgba(255,255,255,.08);
+    --track:rgba(255,255,255,.08); --pill:#2E3440; --pill-neutral:rgba(255,255,255,.10); --border:rgba(255,255,255,.12);
+    --orb-blue:#1F3A5F; --orb-mint:#16463C; --orb-lilac:#332C5C; --orb-opacity:.9;
+    --ink:#F5F7FA; --mock-ground:#0F1219;
+  }
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important; animation-delay:0s !important; animation-iteration-count:1 !important;}
+}
 
-  /* entrance reveals */
-  .up { opacity: 0; animation: up .9s cubic-bezier(.2,.8,.2,1) both; }
-  .d1 { animation-delay: .15s } .d2 { animation-delay: .35s } .d3 { animation-delay: 3.9s } .d4 { animation-delay: 4.1s } .d5 { animation-delay: 4.3s }
-  @keyframes up { from { opacity: 0; transform: translateY(14px);} to { opacity: 1; transform: translateY(0);} }
+.sans{font-family:'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif}
+.mono{font-family:'Geist Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace}
+.label{fill:var(--label)} .secondary{fill:var(--secondary)} .tertiary{fill:var(--tertiary)}
+.on-accent{fill:var(--on-accent)} .accent-text{fill:var(--accent)}
+.surface{fill:var(--surface)} .ground{fill:var(--ground)} .bg{fill:var(--bg)}
+.sep{stroke:var(--separator)} .border{stroke:var(--border)}
+.accent-fill{fill:var(--accent)} .accent-stroke{stroke:var(--accent)}
+.ink{stroke:var(--label)} .ink-fill{fill:var(--label)} .ink2{stroke:var(--secondary)}
+.glass{fill:var(--glass);stroke:var(--glass-border)} .glass-hl{stroke:var(--glass-highlight)}
+.track{fill:var(--track)} .pill{fill:var(--pill)} .pill-neutral{fill:var(--pill-neutral)}
+.tag-success{fill:var(--tag-success)} .tag-success-text{fill:var(--success)} .success-stroke{stroke:var(--success)} .success-fill{fill:var(--success)}
+.tag-warning{fill:var(--tag-warning)} .tag-warning-text{fill:var(--warning)} .warning-stroke{stroke:var(--warning)} .warning-fill{fill:var(--warning)}
+.tag-info{fill:var(--tag-info)} .tag-info-text{fill:var(--info)} .info-stroke{stroke:var(--info)} .info-fill{fill:var(--info)}
+.tag-neutral{fill:var(--tag-neutral)} .tag-neutral-text{fill:var(--tag-neutral-text)}
+.orb-blue{fill:var(--orb-blue);opacity:var(--orb-opacity)} .orb-mint{fill:var(--orb-mint);opacity:var(--orb-opacity)} .orb-lilac{fill:var(--orb-lilac);opacity:var(--orb-opacity)}
+.ease{animation-timing-function:cubic-bezier(.22,1,.36,1)}
 
-  /* typewriter */
-  .typeRect { transform-origin: 64px 192px; transform: scaleX(0); animation: type 2.5s steps(41,end) 1.2s forwards; }
-  @keyframes type { from { transform: scaleX(0);} to { transform: scaleX(1);} }
-  .caret { animation: caretX 2.5s steps(41,end) 1.2s forwards, blink .85s step-end 3.75s infinite; }
-  @keyframes caretX { from { transform: translateX(0);} to { transform: translateX(422px);} }
-  @keyframes blink { 0%,100% { opacity: 1;} 50% { opacity: 0;} }
+.drift1{animation:drift1 26s ease-in-out infinite}
+.drift2{animation:drift2 30s ease-in-out infinite}
+.drift3{animation:drift3 22s ease-in-out infinite}
+@keyframes drift1{0%,100%{transform:translate(0,0)}50%{transform:translate(60px,30px)}}
+@keyframes drift2{0%,100%{transform:translate(0,0)}50%{transform:translate(-50px,-40px)}}
+@keyframes drift3{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,50px)}}
 
-  /* status dot */
-  .pulse { transform-box: fill-box; transform-origin: 50% 50%; animation: pulse 2s ease-out infinite; }
-  @keyframes pulse { 0% { transform: scale(1); opacity: .9;} 100% { transform: scale(3.2); opacity: 0;} }
+.only-dark{display:none}
+@media (prefers-color-scheme: dark){ .only-light{display:none} .only-dark{display:inline} }
+.st-sec{stop-color:var(--secondary)} .st-lab{stop-color:var(--label)}
 
-  /* window */
-  .winIn { opacity: 0; animation: winIn 1.1s cubic-bezier(.2,.8,.2,1) .5s both; }
-  @keyframes winIn { from { opacity: 0; transform: translate(40px,24px) scale(.96);} to { opacity: 1; transform: translate(0,0) scale(1);} }
-  .float { animation: float 7s ease-in-out 1.6s infinite; }
-  @keyframes float { 0%,100% { transform: translateY(0);} 50% { transform: translateY(-7px);} }
-  .shine { animation: shine 7s ease-in-out 2s infinite; }
-  @keyframes shine { 0% { transform: translateX(-220px) skewX(-20deg);} 35%,100% { transform: translateX(520px) skewX(-20deg);} }
+/* entrances */
+.rise{opacity:0;animation:rise .8s cubic-bezier(.22,1,.36,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.mask-line{transform:translateY(84px);animation:maskline .85s cubic-bezier(.22,1,.36,1) both}
+@keyframes maskline{to{transform:translateY(0)}}
+.flip{opacity:0;transform-box:fill-box;transform-origin:50% 100%;animation:flip .6s cubic-bezier(.34,1.56,.64,1) both}
+@keyframes flip{0%{opacity:0;transform:scaleY(0) translateY(-8px)}100%{opacity:1;transform:scaleY(1) translateY(0)}}
+.pop{opacity:0;transform-box:fill-box;transform-origin:50% 50%;animation:pop .6s cubic-bezier(.34,1.56,.64,1) both}
+@keyframes pop{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+.mock-in{opacity:0;animation:mockin 1s cubic-bezier(.22,1,.36,1) .35s both}
+@keyframes mockin{from{opacity:0;transform:translate(0,44px) scale(.97)}to{opacity:1;transform:translate(0,0) scale(1)}}
 
-  .sideActive { animation: side 9s ease-in-out 2.2s infinite; }
-  @keyframes side { 0%,22% { transform: translateY(0);} 25%,47% { transform: translateY(18px);} 50%,72% { transform: translateY(36px);} 75%,97% { transform: translateY(54px);} 100% { transform: translateY(0);} }
+/* swoosh + seal */
+.swoosh{stroke-dasharray:1;stroke-dashoffset:1;animation:draw .7s cubic-bezier(.22,1,.36,1) 1.55s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.seal{opacity:0;transform-box:fill-box;transform-origin:50% 50%;animation:seal .55s cubic-bezier(.34,1.56,.64,1) 2s both}
+@keyframes seal{0%{opacity:0;transform:scale(2.1) rotate(-28deg)}100%{opacity:1;transform:scale(1) rotate(-12deg)}}
+.seal-ring{transform-box:fill-box;transform-origin:50% 50%;animation:spin 48s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 
-  .tile { opacity: 0; animation: up .7s cubic-bezier(.2,.8,.2,1) both; }
-  .bar { transform-box: fill-box; transform-origin: 50% 100%; transform: scaleY(0); animation: grow .9s cubic-bezier(.2,.8,.2,1) forwards; }
-  @keyframes grow { from { transform: scaleY(0);} to { transform: scaleY(1);} }
-  .line { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1.8s cubic-bezier(.4,0,.2,1) 2.3s forwards; }
-  @keyframes draw { to { stroke-dashoffset: 0;} }
-  .areaFill { opacity: 0; animation: fade 1s ease 3.6s forwards; }
-  @keyframes fade { to { opacity: 1;} }
-  .tip { opacity: 0; animation: tipPop .5s cubic-bezier(.2,.8,.2,1) 4.1s forwards; }
-  @keyframes tipPop { from { opacity: 0; transform: translateY(6px);} to { opacity: 1; transform: translateY(0);} }
+/* status chip */
+.pulse{transform-box:fill-box;transform-origin:50% 50%;animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(3);opacity:0}}
 
-  .knob { animation: knob 5s ease-in-out infinite; }
-  @keyframes knob { 0%,40% { transform: translateX(0);} 50%,90% { transform: translateX(16px);} 100% { transform: translateX(0);} }
-  .track { animation: track 5s ease-in-out infinite; }
-  @keyframes track { 0%,40% { fill: #2b3447;} 50%,90% { fill: #22d3ee;} 100% { fill: #2b3447;} }
+/* nav segmented pill — springs between Work / Stack / Contact */
+.segpill{animation:segpill 12s cubic-bezier(.34,1.56,.64,1) 2.5s infinite}
+@keyframes segpill{0%,30%{transform:translateX(0)}33.3%,63.3%{transform:translateX(66.7px)}66.6%,96.6%{transform:translateX(133.4px)}100%{transform:translateX(0)}}
+.sel1{animation:sel1 12s step-end 2.5s infinite} .sel2{animation:sel2 12s step-end 2.5s infinite} .sel3{animation:sel3 12s step-end 2.5s infinite}
+@keyframes sel1{0%,31%{opacity:1}32%,98%{opacity:0}99%,100%{opacity:1}}
+@keyframes sel2{0%,32%{opacity:0}33%,64%{opacity:1}65%,100%{opacity:0}}
+@keyframes sel3{0%,65%{opacity:0}66%,98%{opacity:1}99%,100%{opacity:0}}
+.sheen{animation:sheen 7s ease-in-out 3s infinite}
+@keyframes sheen{0%{transform:translateX(-60px) skewX(-20deg)}30%,100%{transform:translateX(160px) skewX(-20deg)}}
 
-  .cursor { animation: cur 6s cubic-bezier(.45,.05,.3,1) 2.8s infinite; }
-  @keyframes cur { 0% { transform: translate(150px,118px);} 30%,46% { transform: translate(274px,212px);} 72% { transform: translate(120px,160px);} 100% { transform: translate(150px,118px);} }
-  .btn { transform-box: fill-box; transform-origin: 50% 50%; animation: press 6s 2.8s infinite; }
-  @keyframes press { 0%,32% { transform: scale(1);} 35% { transform: scale(.92);} 39%,100% { transform: scale(1);} }
-  .ripple { transform-box: fill-box; transform-origin: 50% 50%; opacity: 0; animation: rip 6s 2.8s infinite; }
-  @keyframes rip { 0%,33% { transform: scale(.15); opacity: 0;} 35% { opacity: .55;} 58%,100% { transform: scale(1); opacity: 0;} }
-  .deployed { opacity: 0; animation: deployed 6s 2.8s infinite; }
-  @keyframes deployed { 0%,36% { opacity: 0;} 40%,62% { opacity: 1;} 68%,100% { opacity: 0;} }
+/* mock: row 2 processing → filed, toast */
+.spin{transform-box:fill-box;transform-origin:50% 50%;animation:spin 1s linear infinite}
+.proc{animation:proc 9s step-end infinite} .filed{animation:filed 9s step-end infinite}
+@keyframes proc{0%,40%{opacity:1}41%,93%{opacity:0}94%,100%{opacity:1}}
+@keyframes filed{0%,40%{opacity:0}41%,93%{opacity:1}94%,100%{opacity:0}}
+.toast{opacity:0;animation:toast 9s cubic-bezier(.22,1,.36,1) infinite}
+@keyframes toast{0%,40%{opacity:0;transform:translateY(16px)}45%,80%{opacity:1;transform:translateY(0)}86%,100%{opacity:0;transform:translateY(10px)}}
+.row{opacity:0;animation:rise .6s cubic-bezier(.22,1,.36,1) both}
+
+/* parallax chips */
+.par1{animation:par1 9s ease-in-out infinite} .par2{animation:par2 11s ease-in-out infinite}
+@keyframes par1{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes par2{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+
+.on-accent{stroke:var(--on-accent)}
 </style>
+<defs>
+  <clipPath id="frame"><rect width="1000" height="480" rx="28"/></clipPath>
+  <linearGradient id="shimmer" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" class="st-sec"/><stop offset=".5" class="st-lab"/><stop offset="1" class="st-sec"/>
+    <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="3.2s" repeatCount="indefinite"/>
+  </linearGradient>
+  
+  <filter id="glassShadow" x="-20%" y="-40%" width="140%" height="200%">
+    <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#101828" flood-opacity=".10"/>
+  </filter>
+  <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#101828" flood-opacity=".06"/>
+  </filter>
+  <filter id="mockShadow" x="-20%" y="-20%" width="140%" height="150%">
+    <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#101828" flood-opacity=".16"/>
+  </filter>
+  <filter id="pillShadow" x="-20%" y="-40%" width="140%" height="200%">
+    <feDropShadow dx="0" dy="1" stdDeviation="1.4" flood-color="#101828" flood-opacity=".14"/>
+  </filter>
+  <filter id="orbBlur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="55"/></filter>
 
+</defs>
 <g clip-path="url(#frame)">
-  <rect width="1000" height="340" fill="url(#bg)"/>
-  <g class="orb1"><circle cx="150" cy="70" r="230" fill="url(#orbIndigo)"/></g>
-  <g class="orb2"><circle cx="860" cy="320" r="220" fill="url(#orbCyan)"/></g>
-  <g class="orb3"><circle cx="560" cy="-30" r="190" fill="url(#orbViolet)"/></g>
-  <rect width="1000" height="340" fill="url(#dots)"/>
-</g>
-
-<!-- ===== left: identity ===== -->
-<g class="sans">
-  <text class="up d1" x="64" y="112" font-size="14" font-weight="600" letter-spacing="3" fill="#8b9bb4">HEY, I'M</text>
-  <text class="up d2" x="62" y="166" font-size="52" font-weight="800" letter-spacing="-1.5" fill="url(#nameGrad)">Harsh Gorjiwala</text>
-
-  <g clip-path="url(#typeClip)">
-    <text class="mono" x="64" y="213" font-size="17" fill="#c7d2fe" textLength="422" lengthAdjust="spacing">founder · building vertical SaaS products</text>
-  </g>
-  <rect class="caret" x="64" y="197" width="9" height="20" rx="1.5" fill="#22d3ee"/>
-
-  <!-- pills -->
-  <g class="up d3">
-    <rect x="64" y="246" width="164" height="30" rx="15" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
-    <path d="M82 254.5a5.5 5.5 0 0 1 5.5 5.5c0 4-5.5 9-5.5 9s-5.5-5-5.5-9a5.5 5.5 0 0 1 5.5-5.5z" fill="none" stroke="#9ec5ff" stroke-width="1.5"/>
-    <circle cx="82" cy="260" r="1.6" fill="#9ec5ff"/>
-    <text x="156" y="265.5" font-size="12.5" font-weight="600" fill="#d4dcea" text-anchor="middle">Hamilton, Ontario</text>
-  </g>
-  <g class="up d4">
-    <rect x="238" y="246" width="190" height="30" rx="15" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
-    <text class="mono" x="333" y="265" font-size="12" fill="#c7d2fe" text-anchor="middle">.NET 8 · React · Postgres</text>
-  </g>
-  <g class="up d5">
-    <rect x="438" y="246" width="140" height="30" rx="15" fill="#34d399" fill-opacity="0.08" stroke="#34d399" stroke-opacity="0.35"/>
-    <circle class="pulse" cx="456" cy="261" r="4" fill="#34d399" fill-opacity="0.5"/>
-    <circle cx="456" cy="261" r="4" fill="#34d399"/>
-    <text x="514" y="265.5" font-size="12.5" font-weight="600" fill="#a7f3d0" text-anchor="middle">Actively building</text>
+  <rect width="1000" height="480" class="bg"/>
+  
+  <g filter="url(#orbBlur)">
+    <circle class="orb-blue drift1" cx="190" cy="110" r="230"/>
+    <circle class="orb-mint drift2" cx="820" cy="430" r="250"/>
+    <circle class="orb-lilac drift3" cx="600" cy="40" r="190"/>
   </g>
 </g>
+<rect x=".5" y=".5" width="999" height="479" rx="28" fill="none" class="border" stroke-width="1" opacity=".6"/>
 
-<!-- ===== right: floating product window ===== -->
-<g transform="translate(612,56)">
- <g class="winIn">
-  <g class="float">
-   <rect x="6" y="14" width="340" height="236" rx="18" fill="#000" opacity="0.45" filter="url(#softGlow)"/>
-   <g clip-path="url(#winClip)">
-    <rect width="340" height="236" fill="#0f1524"/>
-    <rect width="340" height="236" fill="#ffffff" fill-opacity="0.02"/>
-    <!-- title bar -->
-    <rect width="340" height="30" fill="#ffffff" fill-opacity="0.035"/>
-    <circle cx="16" cy="15" r="4.5" fill="#ff5f57" opacity="0.85"/>
-    <circle cx="30" cy="15" r="4.5" fill="#febc2e" opacity="0.85"/>
-    <circle cx="44" cy="15" r="4.5" fill="#28c840" opacity="0.85"/>
-    <text class="mono" x="64" y="19" font-size="10.5" fill="#6f7f98">klinova — dashboard</text>
-    <rect x="262" y="8" width="62" height="14" rx="7" fill="#34d399" fill-opacity="0.12"/>
-    <circle cx="272" cy="15" r="2.5" fill="#34d399"/>
-    <text class="mono" x="279" y="18.5" font-size="8.5" font-weight="600" fill="#a7f3d0">LIVE</text>
-    <line x1="0" y1="30.5" x2="340" y2="30.5" stroke="#ffffff" stroke-opacity="0.07"/>
-
-    <!-- sidebar -->
-    <rect y="31" width="64" height="205" fill="#ffffff" fill-opacity="0.02"/>
-    <line x1="64.5" y1="31" x2="64.5" y2="236" stroke="#ffffff" stroke-opacity="0.06"/>
-    <rect class="sideActive" x="4" y="46" width="3" height="10" rx="1.5" fill="#818cf8"/>
-    <rect x="16" y="48" width="34" height="6" rx="3" fill="#ffffff" fill-opacity="0.18"/>
-    <rect x="16" y="66" width="26" height="6" rx="3" fill="#ffffff" fill-opacity="0.12"/>
-    <rect x="16" y="84" width="30" height="6" rx="3" fill="#ffffff" fill-opacity="0.12"/>
-    <rect x="16" y="102" width="22" height="6" rx="3" fill="#ffffff" fill-opacity="0.12"/>
-    <circle cx="20" cy="218" r="6" fill="url(#accent)"/>
-    <rect x="30" y="215" width="22" height="6" rx="3" fill="#ffffff" fill-opacity="0.12"/>
-
-    <!-- stat tiles -->
-    <g class="sans">
-      <g class="tile" style="animation-delay:1.4s">
-        <rect x="76" y="42" width="74" height="44" rx="8" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.07"/>
-        <text x="86" y="57" font-size="8.5" fill="#7c8aa3">Rx today</text>
-        <text x="86" y="76" font-size="15" font-weight="700" fill="#eef2ff">1,284</text>
-      </g>
-      <g class="tile" style="animation-delay:1.6s">
-        <rect x="158" y="42" width="74" height="44" rx="8" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.07"/>
-        <text x="168" y="57" font-size="8.5" fill="#7c8aa3">Uptime</text>
-        <text x="168" y="76" font-size="15" font-weight="700" fill="#eef2ff">99.98%</text>
-      </g>
-      <g class="tile" style="animation-delay:1.8s">
-        <rect x="240" y="42" width="74" height="44" rx="8" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.07"/>
-        <text x="250" y="57" font-size="8.5" fill="#7c8aa3">p95 latency</text>
-        <text x="250" y="76" font-size="15" font-weight="700" fill="#eef2ff">42<tspan font-size="9" fill="#9ec5ff"> ms</tspan></text>
-      </g>
-    </g>
-
-    <!-- chart -->
-    <g>
-      <line x1="76" y1="190.5" x2="314" y2="190.5" stroke="#ffffff" stroke-opacity="0.08"/>
-      <line x1="76" y1="160.5" x2="314" y2="160.5" stroke="#ffffff" stroke-opacity="0.04" stroke-dasharray="2 3"/>
-      <line x1="76" y1="130.5" x2="314" y2="130.5" stroke="#ffffff" stroke-opacity="0.04" stroke-dasharray="2 3"/>
-      <rect class="bar" style="animation-delay:1.9s" x="78"  y="162" width="12" height="28" rx="3" fill="#818cf8" fill-opacity="0.28"/>
-      <rect class="bar" style="animation-delay:2.0s" x="98"  y="146" width="12" height="44" rx="3" fill="#818cf8" fill-opacity="0.28"/>
-      <rect class="bar" style="animation-delay:2.1s" x="118" y="154" width="12" height="36" rx="3" fill="#818cf8" fill-opacity="0.28"/>
-      <rect class="bar" style="animation-delay:2.2s" x="138" y="134" width="12" height="56" rx="3" fill="#818cf8" fill-opacity="0.28"/>
-      <rect class="bar" style="animation-delay:2.3s" x="158" y="140" width="12" height="50" rx="3" fill="#818cf8" fill-opacity="0.28"/>
-      <rect class="bar" style="animation-delay:2.4s" x="178" y="124" width="12" height="66" rx="3" fill="#818cf8" fill-opacity="0.28"/>
-      <rect class="bar" style="animation-delay:2.5s" x="198" y="132" width="12" height="58" rx="3" fill="#818cf8" fill-opacity="0.28"/>
-      <rect class="bar" style="animation-delay:2.6s" x="218" y="116" width="12" height="74" rx="3" fill="#818cf8" fill-opacity="0.28"/>
-      <rect class="bar" style="animation-delay:2.7s" x="238" y="122" width="12" height="68" rx="3" fill="#818cf8" fill-opacity="0.28"/>
-      <rect class="bar" style="animation-delay:2.8s" x="258" y="108" width="12" height="82" rx="3" fill="#818cf8" fill-opacity="0.28"/>
-      <rect class="bar" style="animation-delay:2.9s" x="278" y="112" width="12" height="78" rx="3" fill="#818cf8" fill-opacity="0.28"/>
-      <rect class="bar" style="animation-delay:3.0s" x="298" y="100" width="12" height="90" rx="3" fill="url(#accent)" fill-opacity="0.9"/>
-      <path class="areaFill" d="M84 158 L104 142 L124 150 L144 130 L164 136 L184 120 L204 128 L224 112 L244 118 L264 104 L284 108 L304 96 L304 190 L84 190 Z" fill="url(#area)"/>
-      <path class="line" pathLength="1" d="M84 158 L104 142 L124 150 L144 130 L164 136 L184 120 L204 128 L224 112 L244 118 L264 104 L284 108 L304 96" fill="none" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <g class="tip">
-        <circle cx="304" cy="96" r="3.5" fill="#22d3ee" stroke="#0f1524" stroke-width="2"/>
-        <rect x="238" y="88" width="50" height="16" rx="5" fill="#1b2335" stroke="#ffffff" stroke-opacity="0.1"/>
-        <path d="M288 96 l5 0" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1"/>
-        <text class="mono" x="263" y="99" font-size="8.5" font-weight="600" fill="#9ec5ff" text-anchor="middle">+38.4%</text>
-      </g>
-    </g>
-
-    <!-- bottom controls -->
-    <g class="sans">
-      <rect class="track" x="76" y="205" width="34" height="18" rx="9" fill="#2b3447"/>
-      <circle class="knob" cx="85" cy="214" r="6.5" fill="#f8fafc"/>
-      <text x="118" y="217.5" font-size="10" fill="#aab6c9">Auto-sync faxes</text>
-      <circle class="ripple" cx="277" cy="214" r="40" fill="#818cf8"/>
-      <g class="btn">
-        <rect x="238" y="202" width="78" height="24" rx="8" fill="url(#accent)"/>
-        <text x="277" y="218" font-size="10.5" font-weight="700" fill="#0b1020" text-anchor="middle">Deploy</text>
-      </g>
-      <g class="deployed">
-        <rect x="244" y="176" width="72" height="18" rx="6" fill="#34d399" fill-opacity="0.15" stroke="#34d399" stroke-opacity="0.4"/>
-        <path d="M253 185 l3 3 l6 -6" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        <text class="mono" x="267" y="188.5" font-size="8.5" font-weight="600" fill="#a7f3d0">Deployed</text>
-      </g>
-    </g>
-
-    <!-- shine sweep -->
-    <rect class="shine" x="0" y="-40" width="110" height="320" fill="url(#shine)"/>
-   </g>
-   <rect width="340" height="236" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0.12"/>
-
-   <!-- cursor -->
-   <g class="cursor">
-     <path d="M0 0 L0 15.5 L4.2 12 L7 18 L9.6 16.8 L6.8 11 L12 11 Z" fill="#ffffff" stroke="#0b1020" stroke-width="1.2" stroke-linejoin="round"/>
-   </g>
+  <g class="rise" style="animation-delay:.1s">
+    <g class="glass-wrap "><rect x="30" y="24" width="940" height="56" rx="28.0" class="glass" stroke-width="1" filter="url(#glassShadow)"/><path d="M42.6 25.5 H957.4" class="glass-hl" stroke-width="1" stroke-linecap="round" opacity=".9"/></g>
+    <!-- mark: a backbone with three products -->
+    <rect x="46" y="38" width="28" height="28" rx="8" class="accent-fill"/>
+    <path d="M53 46h10M53 52h14M53 58h8" stroke-width="2.6" stroke-linecap="round" class="on-accent" style="stroke:var(--on-accent)"/>
+    <text x="84" y="57.2" font-size="15" font-weight="600" class="sans label">Harsh Gorjiwala</text>
+    <g class="tag"><rect x="210.94" y="42" width="61.5" height="20" rx="4" class="tag-neutral"/><text x="218.9" y="56.1" font-size="11.5" font-weight="500" class="sans tag-neutral-text">Founder</text></g>
+    <!-- neutral segmented control -->
+    <rect x="400" y="34" width="200" height="36" rx="18" class="track"/>
+    <rect x="403.3" y="38" width="60" height="28" rx="14" class="pill segpill" filter="url(#pillShadow)"/>
+    <text x="433.3" y="56.6" font-size="13" font-weight="500" text-anchor="middle" class="sans secondary">Work</text><text x="500" y="56.6" font-size="13" font-weight="500" text-anchor="middle" class="sans secondary">Stack</text><text x="566.7" y="56.6" font-size="13" font-weight="500" text-anchor="middle" class="sans secondary">Contact</text><text x="433.3" y="56.6" font-size="13" font-weight="600" text-anchor="middle" class="sans label sel1">Work</text><text x="500" y="56.6" font-size="13" font-weight="600" text-anchor="middle" class="sans label sel2">Stack</text><text x="566.7" y="56.6" font-size="13" font-weight="600" text-anchor="middle" class="sans label sel3">Contact</text>
+    <!-- appearance button (sun in light, moon in dark) -->
+    <circle cx="828" cy="52" r="18" class="surface border" stroke-width="1"/>
+    <g transform="translate(819,43)"><g class="only-light"><circle cx="9" cy="9" r="3.2" fill="none" stroke-width="1.6" class="ink"/><path d="M9 2.5v2M9 13.5v2M2.5 9h2M13.5 9h2M4.4 4.4l1.4 1.4M12.2 12.2l1.4 1.4M4.4 13.6l1.4-1.4M12.2 5.8l1.4-1.4" stroke-width="1.6" stroke-linecap="round" class="ink"/></g><g class="only-dark"><path d="M14.5 10.8A6 6 0 0 1 7.2 3.5a6 6 0 1 0 7.3 7.3z" fill="none" stroke-width="1.6" stroke-linejoin="round" class="ink"/></g></g>
+    <!-- the one accent action in the nav -->
+    <clipPath id="ctaClip"><rect x="855.0" y="34" width="99.0" height="36" rx="18"/></clipPath>
+    <rect x="855.0" y="34" width="99.0" height="36" rx="18" class="accent-fill"/>
+    <g clip-path="url(#ctaClip)"><rect class="sheen" x="855.0" y="30" width="28" height="44" fill="#fff" opacity=".22"/></g>
+    <text x="904.5" y="57" font-size="14" font-weight="600" text-anchor="middle" class="sans on-accent">Say hello</text>
   </g>
- </g>
-</g>
+
+  <g class="rise" style="animation-delay:.3s">
+    <rect x="60" y="108" width="215.0" height="30" rx="15" class="surface border" stroke-width="1"/>
+    <circle cx="75" cy="123" r="4" class="success-fill pulse"/>
+    <circle cx="75" cy="123" r="4" class="success-fill"/>
+    <text x="87" y="127.6" font-size="13" font-weight="500" class="sans" fill="url(#shimmer)">Building in Hamilton, Ontario</text>
+  </g>
+
+  <clipPath id="l1"><rect x="50" y="150" width="600" height="80"/></clipPath>
+  <clipPath id="l2"><rect x="50" y="212" width="600" height="80"/></clipPath>
+  <g clip-path="url(#l1)">
+    <text x="60" y="212" font-size="62" font-weight="600" letter-spacing="-0.04em" class="sans label mask-line" style="animation-delay:.45s">One backbone.</text>
+  </g>
+  <text x="60.0" y="274" font-size="62" font-weight="600" letter-spacing="-0.04em" class="sans label flip" style="animation-delay:1.05s">M</text><text x="113.4" y="274" font-size="62" font-weight="600" letter-spacing="-0.04em" class="sans label flip" style="animation-delay:1.12s">a</text><text x="148.0" y="274" font-size="62" font-weight="600" letter-spacing="-0.04em" class="sans label flip" style="animation-delay:1.19s">n</text><text x="182.8" y="274" font-size="62" font-weight="600" letter-spacing="-0.04em" class="sans label flip" style="animation-delay:1.26s">y</text>
+  <g clip-path="url(#l2)">
+    <text x="227.8" y="274" font-size="62" font-weight="600" letter-spacing="-0.04em" class="sans label mask-line" style="animation-delay:.7s">products.</text>
+  </g>
+  <!-- hand-drawn underline swoosh -->
+  <path class="swoosh accent-stroke" pathLength="1" d="M234 290 C 304 300, 454 298, 493 283 C 453 286, 364 292, 314 291" fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>
+  <!-- ink seal -->
+  <g transform="translate(518,186)"><g class="seal">
+    <circle r="36" fill="none" stroke-width="2.4" class="ink"/>
+    <circle r="27" fill="none" stroke-width="1" stroke-dasharray="2.5 2.5" class="ink"/>
+    <g class="seal-ring">
+      <defs><path id="sealPath" d="M-31.5 0a31.5 31.5 0 1 1 63 0a31.5 31.5 0 1 1 -63 0"/></defs>
+      <text font-size="7.4" font-weight="600" letter-spacing=".16em" class="sans ink-fill"><textPath href="#sealPath" startOffset="0">HAMILTON · ONTARIO · CANADA · FOUNDER ·</textPath></text>
+    </g>
+    <text y="7" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="-.02em" class="sans ink-fill">HG</text>
+  </g></g>
+<text x="60" y="316" font-size="17" class="sans secondary rise" style="animation-delay:1.25s">Founder in Hamilton, Ontario. I build vertical SaaS —</text><text x="60" y="340" font-size="17" class="sans secondary rise" style="animation-delay:1.33s">Klinova, SignProof, PartTrace and PolicyPulse — on one</text><text x="60" y="364" font-size="17" class="sans secondary rise" style="animation-delay:1.41s">shared backbone for auth, signing, storage and payments.</text>
+
+  <g class="rise" style="animation-delay:1.55s">
+    <rect x="60" y="394" width="198.9" height="44" rx="22" class="accent-fill"/>
+    <text x="159.5" y="421.4" font-size="15" font-weight="600" text-anchor="middle" class="sans on-accent">See what I'm building</text>
+  </g>
+  <g class="rise" style="animation-delay:1.65s">
+    <rect x="270.9" y="394" width="132.7" height="44" rx="22" class="surface border" stroke-width="1"/>
+    <text x="337.3" y="421.4" font-size="15" font-weight="600" text-anchor="middle" class="sans label">Get in touch</text>
+  </g>
+
+  <g class="mock-in">
+    <g transform="translate(600,104)">
+      <rect width="370" height="336" rx="24" fill="var(--mock-ground)" class="border" stroke-width="1" filter="url(#mockShadow)"/>
+      <!-- floating glass icon rail -->
+      <g class="glass-wrap "><rect x="12" y="12" width="48" height="312" rx="24.0" class="glass" stroke-width="1" filter="url(#glassShadow)"/><path d="M22.8 13.5 H49.2" class="glass-hl" stroke-width="1" stroke-linecap="round" opacity=".9"/></g>
+      <circle cx="36" cy="44" r="17" class="pill-neutral"/>
+      <g transform="translate(27,35)"><path d="M3 10l2.2-6h7.6L15 10v4.5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z M3 10h3.5l1.2 2.2h2.6l1.2-2.2H15" fill="none" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" class="ink"/></g><g transform="translate(27,75)"><path d="M5 2.5h5.5L14.5 6.5V15a1 1 0 0 1-1 1h-8.5a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1z M10.5 2.5v4h4 M6.5 9.5h5 M6.5 12.5h5" fill="none" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" class="ink2"/></g><g transform="translate(27,115)"><g transform="rotate(-35 9 9)"><rect x="2" y="6" width="14" height="6" rx="3" fill="none" stroke-width="1.6" class="ink2"/><path d="M9 6v6" stroke-width="1.6" class="ink2"/></g></g><g transform="translate(27,155)"><path d="M3 15h12 M5.5 12V8.5 M9 12V4.5 M12.5 12V7" fill="none" stroke-width="1.6" stroke-linecap="round" class="ink2"/></g>
+      <circle cx="36" cy="296" r="13" fill="var(--accent-soft)"/>
+      <text x="36" y="299.5" font-size="9" font-weight="600" text-anchor="middle" class="sans accent-text">HG</text>
+      <!-- page header: large title + the one accent action -->
+      <text x="72" y="44" font-size="22" font-weight="600" letter-spacing="-.02em" class="sans label">Inbox</text>
+      <text x="72" y="60" font-size="11" class="sans secondary">3 new · 1 needs review</text>
+      <rect x="292" y="26" width="66" height="32" rx="16" class="accent-fill"/>
+      <g transform="translate(300,33)"><path d="M9 4.5v9M4.5 9h9" stroke-width="1.8" stroke-linecap="round" class="on-accent"/></g>
+      <text x="321" y="46" font-size="12" font-weight="600" class="sans on-accent">New</text>
+      <!-- neutral segmented control -->
+      <rect x="72" y="72" width="168" height="30" rx="15" class="track"/>
+      <rect x="75" y="75" width="50" height="24" rx="12" class="pill" filter="url(#pillShadow)"/>
+      <text x="100" y="91.3" font-size="11.5" font-weight="600" text-anchor="middle" class="sans label">All</text><text x="156" y="91.3" font-size="11.5" font-weight="500" text-anchor="middle" class="sans secondary">Faxes</text><text x="212" y="91.3" font-size="11.5" font-weight="500" text-anchor="middle" class="sans secondary">Rx</text>
+      <!-- opaque content card: inset grouped list -->
+      <rect x="72" y="112" width="286" height="156" rx="14" class="surface border" stroke-width="1" filter="url(#cardShadow)"/>
+      
+      <g class="row" style="animation-delay:0.9s">
+        
+        <rect x="84" y="124" width="28" height="28" rx="7" class="tag-neutral"/>
+        <g transform="translate(89,129)"><path d="M5 2.5h5.5L14.5 6.5V15a1 1 0 0 1-1 1h-8.5a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1z M10.5 2.5v4h4 M6.5 9.5h5 M6.5 12.5h5" fill="none" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" class="ink2"/></g>
+        <text x="122" y="135" font-size="12.5" font-weight="500" class="sans label">Rx renewal</text>
+        <text x="122" y="150" font-size="10.5" class="sans secondary">Fax · 09:12 · 2 pages</text>
+        <g transform="translate(289.1,0)"><g class="tag"><rect x="0" y="128" width="56.9" height="20" rx="4" class="tag-success"/><g transform="translate(8,132.0)"><path d="M2.5 6.5l2.5 2.5 4.5-5" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="success-stroke"/></g><text x="22.0" y="142.1" font-size="11.5" font-weight="500" class="sans tag-success-text">Filed</text></g></g>
+      </g>
+      <g class="row" style="animation-delay:1.0s">
+        <path d="M124 164 H346" class="sep" stroke-width="1"/>
+        <rect x="84" y="176" width="28" height="28" rx="7" class="tag-neutral"/>
+        <g transform="translate(89,181)"><path d="M5 2.5h5.5L14.5 6.5V15a1 1 0 0 1-1 1h-8.5a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1z M10.5 2.5v4h4 M6.5 9.5h5 M6.5 12.5h5" fill="none" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" class="ink2"/></g>
+        <text x="122" y="187" font-size="12.5" font-weight="500" class="sans label">Lab requisition</text>
+        <text x="122" y="202" font-size="10.5" class="sans secondary">Fax · 09:15 · 1 page</text>
+        <g class="proc" transform="translate(254.6,0)"><g class="tag"><rect x="0" y="180" width="91.4" height="20" rx="4" class="tag-neutral"/><g transform="translate(8,184.0)"><circle cx="6" cy="6" r="4.4" fill="none" stroke-width="1.6" stroke-dasharray="14 9" stroke-linecap="round" class="ink2 spin"/></g><text x="22.0" y="194.1" font-size="11.5" font-weight="500" class="sans tag-neutral-text">Processing</text></g></g><g class="filed" transform="translate(289.1,0)"><g class="tag"><rect x="0" y="180" width="56.9" height="20" rx="4" class="tag-success"/><g transform="translate(8,184.0)"><path d="M2.5 6.5l2.5 2.5 4.5-5" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="success-stroke"/></g><text x="22.0" y="194.1" font-size="11.5" font-weight="500" class="sans tag-success-text">Filed</text></g></g>
+      </g>
+      <g class="row" style="animation-delay:1.1s">
+        <path d="M124 216 H346" class="sep" stroke-width="1"/>
+        <rect x="84" y="228" width="28" height="28" rx="7" class="tag-neutral"/>
+        <g transform="translate(89,233)"><path d="M5 2.5h5.5L14.5 6.5V15a1 1 0 0 1-1 1h-8.5a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1z M10.5 2.5v4h4 M6.5 9.5h5 M6.5 12.5h5" fill="none" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" class="ink2"/></g>
+        <text x="122" y="239" font-size="12.5" font-weight="500" class="sans label">Referral letter</text>
+        <text x="122" y="254" font-size="10.5" class="sans secondary">Fax · 09:21 · 3 pages</text>
+        <g transform="translate(241.1,0)"><g class="tag"><rect x="0" y="232" width="104.9" height="20" rx="4" class="tag-warning"/><g transform="translate(8,236.0)"><path d="M6 1.8l4.6 8.2H1.4z" fill="none" stroke-width="1.5" stroke-linejoin="round" class="warning-stroke"/><path d="M6 5v2.4M6 8.6v.1" stroke-width="1.5" stroke-linecap="round" class="warning-stroke"/></g><text x="22.0" y="246.1" font-size="11.5" font-weight="500" class="sans tag-warning-text">Needs review</text></g></g>
+      </g>
+      <!-- glass toast (floating layer) -->
+      <g class="toast">
+        <g class="glass-wrap "><rect x="96" y="284" width="208" height="36" rx="18.0" class="glass" stroke-width="1" filter="url(#glassShadow)"/><path d="M104.1 285.5 H295.9" class="glass-hl" stroke-width="1" stroke-linecap="round" opacity=".9"/></g>
+        <g transform="translate(110,296)"><path d="M2.5 6.5l2.5 2.5 4.5-5" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="success-stroke"/></g>
+        <text x="130" y="306.5" font-size="12" font-weight="500" class="sans label">Filed to chart</text>
+        <text x="290" y="306.5" font-size="12" font-weight="600" text-anchor="end" class="sans accent-text">Undo</text>
+      </g>
+    </g>
+  </g>
+  <!-- parallax glass chips from the other products -->
+  <g class="pop" style="animation-delay:1.3s"><g class="par1">
+    <g class="glass-wrap "><rect x="846" y="86" width="128" height="34" rx="17.0" class="glass" stroke-width="1" filter="url(#glassShadow)"/><path d="M853.65 87.5 H966.35" class="glass-hl" stroke-width="1" stroke-linecap="round" opacity=".9"/></g>
+    <g transform="translate(860,97)"><path d="M2.5 6.5l2.5 2.5 4.5-5" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="success-stroke"/></g>
+    <text x="878" y="107.5" font-size="12" font-weight="500" class="sans label">Sealed · SignProof</text>
+  </g></g>
+  <g class="pop" style="animation-delay:1.45s"><g class="par2">
+    <g class="glass-wrap "><rect x="556" y="404" width="150" height="34" rx="17.0" class="glass" stroke-width="1" filter="url(#glassShadow)"/><path d="M563.65 405.5 H698.35" class="glass-hl" stroke-width="1" stroke-linecap="round" opacity=".9"/></g>
+    <circle cx="573" cy="421" r="4" class="accent-fill"/>
+    <circle cx="573" cy="421" r="4" class="accent-fill pulse"/>
+    <text x="586" y="425.5" font-size="12" font-weight="500" class="sans label">PT-0418 · Bay 3 · live</text>
+  </g></g>
 </svg>

@@ -1,280 +1,244 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 504" width="1000" height="504" role="img" aria-labelledby="pTitle pDesc">
-<title id="pTitle">What I'm building — Klinova, SignProof, PartTrace, PolicyPulse</title>
-<desc id="pDesc">Four product cards, each with a small animated UI motif: a fax intake queue, a self-drawing signature, an RFID radar sweep, and a policy-signal research panel.</desc>
-<defs>
-  <linearGradient id="pbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e1422"/><stop offset="1" stop-color="#0a0e19"/></linearGradient>
-  <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f59e0b" stop-opacity="0"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0.45"/></linearGradient>
-  <linearGradient id="sparkArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34d399" stop-opacity="0.35"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/></linearGradient>
-  <linearGradient id="cyanLine" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#60a5fa"/></linearGradient>
-  <clipPath id="motifClip"><rect width="190" height="184" rx="12"/></clipPath>
-</defs>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 630" width="1000" height="630" role="img" aria-labelledby="t d">
+<title id="t">What I'm building — Klinova, SignProof, PartTrace, PolicyPulse</title>
+<desc id="d">Four product cards: Klinova (pharmacy and healthcare, fax intake list), SignProof (Canadian e-signature, a signature being drawn and sealed), PartTrace (RFID parts tracking radar), PolicyPulse (policy signals, impact score and confidence sparkline).</desc>
 <style>
-  .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  .mono { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
-  .card { opacity: 0; animation: cardIn .9s cubic-bezier(.2,.8,.2,1) both; }
-  @keyframes cardIn { from { opacity: 0; transform: translateY(18px);} to { opacity: 1; transform: translateY(0);} }
+@font-face{font-family:'Geist';font-style:normal;font-weight:400;src:url(data:font/woff2;base64,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) format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:500;src:url(data:font/woff2;base64,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) format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:600;src:url(data:font/woff2;base64,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) format('woff2')}
+@font-face{font-family:'Geist Mono';font-style:normal;font-weight:400;src:url(data:font/woff2;base64,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) format('woff2')}
 
-  /* Klinova — fax intake queue (7s loop) */
-  .kRow { opacity: 0; animation: kRow 7s ease-in-out infinite; }
-  @keyframes kRow { 0% { opacity: 0; transform: translateX(28px);} 9% { opacity: 1; transform: translateX(0);} 90% { opacity: 1; transform: translateX(0);} 97%,100% { opacity: 0; transform: translateX(-16px);} }
-  .kParse { animation: kParse 7s infinite; }
-  @keyframes kParse { 0%,42% { opacity: 1;} 47%,100% { opacity: 0;} }
-  .kDone { opacity: 0; animation: kDone 7s infinite; }
-  @keyframes kDone { 0%,44% { opacity: 0;} 49%,100% { opacity: 1;} }
-  .kSpin { transform-box: fill-box; transform-origin: 50% 50%; animation: spin 1.1s linear infinite; }
-  @keyframes spin { to { transform: rotate(360deg);} }
-  .kProg { transform-box: fill-box; transform-origin: 0% 50%; animation: kProg 7s cubic-bezier(.4,0,.2,1) infinite; }
-  @keyframes kProg { 0%,6% { transform: scaleX(0.02);} 48%,92% { transform: scaleX(1);} 100% { transform: scaleX(0.02);} }
-  .kPct { animation: kPct 7s infinite; }
-  @keyframes kPct { 0%,46% { opacity: 0;} 50%,92% { opacity: 1;} 100% { opacity: 0;} }
+:root{
+  --bg:#FBFBFD; --ground:#F2F4F7; --surface:#FFFFFF; --elevated:#FFFFFF; --paper:#FFFFFF;
+  --label:#101828; --secondary:#475467; --tertiary:#667085; --separator:#E4E7EC;
+  --accent:#0B7A69; --accent-hover:#096B5C; --on-accent:#FFFFFF; --accent-soft:rgba(11,122,105,.12);
+  --success:#067647; --warning:#B54708; --info:#5925DC; --destructive:#B42318;
+  --tag-success:#ECFDF3; --tag-warning:#FFFAEB; --tag-info:#F4F3FF; --tag-neutral:#F2F4F7; --tag-neutral-text:#344054;
+  --glass:rgba(255,255,255,.62); --glass-border:rgba(16,24,40,.08); --glass-highlight:rgba(255,255,255,.9);
+  --track:rgba(16,24,40,.06); --pill:#FFFFFF; --pill-neutral:rgba(16,24,40,.07); --border:rgba(16,24,40,.12);
+  --orb-blue:#C3DDF5; --orb-mint:#CBEDE4; --orb-lilac:#DEDAF6; --orb-opacity:1;
+  --ink:#101828; --mock-ground:#F2F4F7;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0B0D12; --ground:#0B0D12; --surface:#161A22; --elevated:#1E232D;
+    --label:#F5F7FA; --secondary:#A6AFBD; --tertiary:#8A94A6; --separator:#2A303B;
+    --accent:#34C6AE; --accent-hover:#5EE0C9; --on-accent:#04201B; --accent-soft:rgba(52,198,174,.16);
+    --success:#47CD89; --warning:#FDB022; --info:#A48AFB; --destructive:#F97066;
+    --tag-success:rgba(71,205,137,.14); --tag-warning:rgba(253,176,34,.14); --tag-info:rgba(164,138,251,.14); --tag-neutral:rgba(255,255,255,.12); --tag-neutral-text:#D0D5DD;
+    --glass:rgba(22,26,34,.62); --glass-border:rgba(255,255,255,.10); --glass-highlight:rgba(255,255,255,.08);
+    --track:rgba(255,255,255,.08); --pill:#2E3440; --pill-neutral:rgba(255,255,255,.10); --border:rgba(255,255,255,.12);
+    --orb-blue:#1F3A5F; --orb-mint:#16463C; --orb-lilac:#332C5C; --orb-opacity:.9;
+    --ink:#F5F7FA; --mock-ground:#0F1219;
+  }
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important; animation-delay:0s !important; animation-iteration-count:1 !important;}
+}
 
-  /* SignProof — self-drawing signature (8s loop) */
-  .sig { stroke-dasharray: 1; stroke-dashoffset: 1; animation: sig 8s cubic-bezier(.45,0,.3,1) infinite; }
-  @keyframes sig { 0%,8% { stroke-dashoffset: 1;} 38%,92% { stroke-dashoffset: 0;} 100% { stroke-dashoffset: 1;} }
-  .pen { animation: pen 8s cubic-bezier(.45,0,.3,1) infinite; }
-  @keyframes pen { 0%,8% { opacity: 0; transform: translate(0,0);} 10% { opacity: 1;} 38% { opacity: 1; transform: translate(108px,-8px);} 44%,100% { opacity: 0; transform: translate(108px,-8px);} }
-  .seal { transform-box: fill-box; transform-origin: 50% 50%; opacity: 0; animation: seal 8s infinite; }
-  @keyframes seal { 0%,40% { opacity: 0; transform: scale(.3) rotate(-15deg);} 46% { opacity: 1; transform: scale(1.12) rotate(4deg);} 50%,92% { opacity: 1; transform: scale(1) rotate(0);} 100% { opacity: 0; transform: scale(.3);} }
-  .hash { opacity: 0; animation: hash 8s infinite; }
-  @keyframes hash { 0%,48% { opacity: 0; transform: translateY(6px);} 54%,92% { opacity: 1; transform: translateY(0);} 100% { opacity: 0;} }
+.sans{font-family:'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif}
+.mono{font-family:'Geist Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace}
+.label{fill:var(--label)} .secondary{fill:var(--secondary)} .tertiary{fill:var(--tertiary)}
+.on-accent{fill:var(--on-accent)} .accent-text{fill:var(--accent)}
+.surface{fill:var(--surface)} .ground{fill:var(--ground)} .bg{fill:var(--bg)}
+.sep{stroke:var(--separator)} .border{stroke:var(--border)}
+.accent-fill{fill:var(--accent)} .accent-stroke{stroke:var(--accent)}
+.ink{stroke:var(--label)} .ink-fill{fill:var(--label)} .ink2{stroke:var(--secondary)}
+.glass{fill:var(--glass);stroke:var(--glass-border)} .glass-hl{stroke:var(--glass-highlight)}
+.track{fill:var(--track)} .pill{fill:var(--pill)} .pill-neutral{fill:var(--pill-neutral)}
+.tag-success{fill:var(--tag-success)} .tag-success-text{fill:var(--success)} .success-stroke{stroke:var(--success)} .success-fill{fill:var(--success)}
+.tag-warning{fill:var(--tag-warning)} .tag-warning-text{fill:var(--warning)} .warning-stroke{stroke:var(--warning)} .warning-fill{fill:var(--warning)}
+.tag-info{fill:var(--tag-info)} .tag-info-text{fill:var(--info)} .info-stroke{stroke:var(--info)} .info-fill{fill:var(--info)}
+.tag-neutral{fill:var(--tag-neutral)} .tag-neutral-text{fill:var(--tag-neutral-text)}
+.orb-blue{fill:var(--orb-blue);opacity:var(--orb-opacity)} .orb-mint{fill:var(--orb-mint);opacity:var(--orb-opacity)} .orb-lilac{fill:var(--orb-lilac);opacity:var(--orb-opacity)}
+.ease{animation-timing-function:cubic-bezier(.22,1,.36,1)}
 
-  /* PartTrace — RFID radar */
-  .sweep { transform-origin: 95px 88px; animation: sweep 4s linear infinite; }
-  @keyframes sweep { to { transform: rotate(360deg);} }
-  .blipRing { transform-box: fill-box; transform-origin: 50% 50%; opacity: 0; animation: blip 4s ease-out infinite; }
-  @keyframes blip { 0% { transform: scale(1); opacity: .9;} 22% { transform: scale(4.2); opacity: 0;} 100% { transform: scale(4.2); opacity: 0;} }
-  .blipDot { animation: blipDot 4s ease-out infinite; }
-  @keyframes blipDot { 0% { opacity: 1;} 60% { opacity: 1;} 90% { opacity: .35;} 100% { opacity: 1;} }
-  .tagFlash { animation: tagFlash 4s infinite; }
-  @keyframes tagFlash { 0%,10% { opacity: 1;} 12% { opacity: .4;} 14%,100% { opacity: 1;} }
+.paper{fill:#FFFFFF} .paper-ink{fill:#101828} .paper-ink-s{stroke:#101828} .paper-mute{fill:#98A2B3}
+.card-in{opacity:0;animation:cardin .8s cubic-bezier(.22,1,.36,1) both}
+@keyframes cardin{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.rise{opacity:0;animation:rise .7s cubic-bezier(.22,1,.36,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.spin{transform-box:fill-box;transform-origin:50% 50%;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 
-  /* PolicyPulse — signals + sparkline (8s loop) */
-  .sigChip { opacity: 0; animation: chip 8s ease-out infinite; }
-  @keyframes chip { 0% { opacity: 0; transform: translateX(-14px);} 8% { opacity: 1; transform: translateX(0);} 90% { opacity: 1; transform: translateX(0);} 96%,100% { opacity: 0; transform: translateX(0);} }
-  .ring { stroke-dasharray: 1; stroke-dashoffset: 1; animation: ring 8s cubic-bezier(.4,0,.2,1) infinite; }
-  @keyframes ring { 0%,20% { stroke-dashoffset: 1;} 55%,92% { stroke-dashoffset: .28;} 100% { stroke-dashoffset: 1;} }
-  .ringTxt { opacity: 0; animation: ringTxt 8s infinite; }
-  @keyframes ringTxt { 0%,30% { opacity: 0;} 45%,92% { opacity: 1;} 100% { opacity: 0;} }
-  .spark { stroke-dasharray: 1; stroke-dashoffset: 1; animation: spark 8s cubic-bezier(.4,0,.2,1) infinite; }
-  @keyframes spark { 0%,15% { stroke-dashoffset: 1;} 60%,92% { stroke-dashoffset: 0;} 100% { stroke-dashoffset: 1;} }
-  .sparkFill { opacity: 0; animation: sparkFill 8s infinite; }
-  @keyframes sparkFill { 0%,55% { opacity: 0;} 65%,92% { opacity: 1;} 100% { opacity: 0;} }
-  .sparkDot { opacity: 0; animation: sparkDot 8s infinite; }
-  @keyframes sparkDot { 0%,58% { opacity: 0;} 62%,92% { opacity: 1;} 100% { opacity: 0;} }
-  .sparkPulse { transform-box: fill-box; transform-origin: 50% 50%; opacity: 0; animation: sparkPulse 1.6s ease-out 4.9s infinite; }
-  @keyframes sparkPulse { 0% { transform: scale(1); opacity: .8;} 100% { transform: scale(4); opacity: 0;} }
+/* Klinova: queue, 10s loop — rows file one after another */
+.kA{animation:kA 10s step-end infinite} .kB{animation:kB 10s step-end infinite}
+@keyframes kA{0%,28%{opacity:1}29%,92%{opacity:0}93%,100%{opacity:1}}
+@keyframes kB{0%,28%{opacity:0}29%,92%{opacity:1}93%,100%{opacity:0}}
+.kA2{animation:kA2 10s step-end infinite} .kB2{animation:kB2 10s step-end infinite}
+@keyframes kA2{0%,52%{opacity:1}53%,92%{opacity:0}93%,100%{opacity:1}}
+@keyframes kB2{0%,52%{opacity:0}53%,92%{opacity:1}93%,100%{opacity:0}}
+.kcount{animation:kcount 10s step-end infinite} .kcount2{animation:kcount2 10s step-end infinite} .kcount3{animation:kcount3 10s step-end infinite}
+@keyframes kcount{0%,28%{opacity:1}29%,92%{opacity:0}93%,100%{opacity:1}}
+@keyframes kcount2{0%,28%{opacity:0}29%,52%{opacity:1}53%,100%{opacity:0}}
+@keyframes kcount3{0%,52%{opacity:0}53%,92%{opacity:1}93%,100%{opacity:0}}
+
+/* SignProof: signature draws, seal springs, glass bar slides up — 9s loop */
+.sig{stroke-dasharray:1;stroke-dashoffset:1;animation:sig 9s cubic-bezier(.45,0,.3,1) infinite}
+@keyframes sig{0%,6%{stroke-dashoffset:1}34%,94%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.pen{opacity:0;animation:pen 9s cubic-bezier(.45,0,.3,1) infinite}
+@keyframes pen{0%,6%{opacity:0;transform:translate(0,0)}8%{opacity:1}34%{opacity:1;transform:translate(104px,-10px)}38%,100%{opacity:0;transform:translate(104px,-10px)}}
+.seal{opacity:0;transform-box:fill-box;transform-origin:50% 50%;animation:seal 9s cubic-bezier(.34,1.56,.64,1) infinite}
+@keyframes seal{0%,38%{opacity:0;transform:scale(2) rotate(-20deg)}44%,94%{opacity:1;transform:scale(1) rotate(-8deg)}100%{opacity:0}}
+.sbar{opacity:0;animation:sbar 9s cubic-bezier(.22,1,.36,1) infinite}
+@keyframes sbar{0%,44%{opacity:0;transform:translateY(14px)}50%,94%{opacity:1;transform:translateY(0)}100%{opacity:0}}
+
+/* PartTrace: sweep + blips (4s) */
+.sweep{transform-box:fill-box;transform-origin:0 100%;animation:spin 4s linear infinite}
+.blip{transform-box:fill-box;transform-origin:50% 50%;opacity:0;animation:blip 4s ease-out infinite}
+@keyframes blip{0%{transform:scale(1);opacity:.8}25%{transform:scale(4);opacity:0}100%{transform:scale(4);opacity:0}}
+.pulse{transform-box:fill-box;transform-origin:50% 50%;animation:pulse 2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(3);opacity:0}}
+
+/* PolicyPulse: signals stagger in, ring + sparkline draw — 9s loop */
+.sigrow{opacity:0;animation:sigrow 9s ease-out infinite}
+@keyframes sigrow{0%{opacity:0;transform:translateX(-10px)}6%{opacity:1;transform:translateX(0)}92%{opacity:1}97%,100%{opacity:0}}
+.ring{stroke-dasharray:1;stroke-dashoffset:1;animation:ring 9s cubic-bezier(.22,1,.36,1) infinite}
+@keyframes ring{0%,14%{stroke-dashoffset:1}48%,92%{stroke-dashoffset:.28}100%{stroke-dashoffset:1}}
+.ringtxt{opacity:0;animation:fadeloop 9s infinite}
+@keyframes fadeloop{0%,26%{opacity:0}40%,92%{opacity:1}100%{opacity:0}}
+.spark{stroke-dasharray:1;stroke-dashoffset:1;animation:spark 9s cubic-bezier(.22,1,.36,1) infinite}
+@keyframes spark{0%,10%{stroke-dashoffset:1}55%,92%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.sparkfill{opacity:0;animation:sparkfill 9s infinite}
+@keyframes sparkfill{0%,50%{opacity:0}60%,92%{opacity:1}100%{opacity:0}}
+
 </style>
+<defs>
+  
+  <filter id="glassShadow" x="-20%" y="-40%" width="140%" height="200%">
+    <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#101828" flood-opacity=".10"/>
+  </filter>
+  <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#101828" flood-opacity=".06"/>
+  </filter>
+  <filter id="mockShadow" x="-20%" y="-20%" width="140%" height="150%">
+    <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#101828" flood-opacity=".16"/>
+  </filter>
+  <filter id="pillShadow" x="-20%" y="-40%" width="140%" height="200%">
+    <feDropShadow dx="0" dy="1" stdDeviation="1.4" flood-color="#101828" flood-opacity=".14"/>
+  </filter>
+  <filter id="orbBlur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="55"/></filter>
 
-<!-- ===================== KLINOVA ===================== -->
-<g transform="translate(0,0)">
- <g class="card" style="animation-delay:.05s">
-  <rect width="486" height="240" rx="18" fill="url(#pbg)" stroke="#ffffff" stroke-opacity="0.08"/>
-  <rect x="28" y="28" width="40" height="40" rx="12" fill="#22d3ee" fill-opacity="0.12" stroke="#22d3ee" stroke-opacity="0.35"/>
-  <path d="M48 38v20M38 48h20" stroke="#67e8f9" stroke-width="3.2" stroke-linecap="round"/>
-  <g class="sans">
-    <text x="80" y="47" font-size="22" font-weight="800" letter-spacing="-.5" fill="#f1f4fb">Klinova</text>
-    <text x="80" y="64" font-size="11.5" fill="#7c8aa3">Pharmacy &amp; healthcare SaaS</text>
-    <rect x="28" y="142" width="88" height="24" rx="12" fill="#22d3ee" fill-opacity="0.1" stroke="#22d3ee" stroke-opacity="0.3"/>
-    <text x="72" y="158" font-size="11" font-weight="600" fill="#a5f3fc" text-anchor="middle">Healthcare</text>
-    <text x="28" y="104" font-size="13" fill="#aab6c9">Multi-tenant platform for pharmacies —</text>
-    <text x="28" y="124" font-size="13" fill="#aab6c9">fax intake, clinical workflows, billing.</text>
-  </g>
-  <g class="mono">
-    <rect x="28" y="192" width="54" height="22" rx="7" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1"/><text x="55" y="207" font-size="10.5" fill="#c7d2fe" text-anchor="middle">.NET 8</text>
-    <rect x="90" y="192" width="54" height="22" rx="7" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1"/><text x="117" y="207" font-size="10.5" fill="#c7d2fe" text-anchor="middle">React</text>
-    <rect x="152" y="192" width="92" height="22" rx="7" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1"/><text x="198" y="207" font-size="10.5" fill="#c7d2fe" text-anchor="middle">Multi-tenant</text>
-  </g>
-  <!-- motif: fax intake queue -->
-  <g transform="translate(268,28)">
-    <rect width="190" height="184" rx="12" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.07"/>
-    <g clip-path="url(#motifClip)">
-      <g class="sans">
-        <text x="14" y="24" font-size="11" font-weight="700" fill="#e2e8f0">Fax intake</text>
-        <rect x="126" y="12" width="50" height="16" rx="8" fill="#22d3ee" fill-opacity="0.12"/>
-        <text x="151" y="23.5" font-size="9" font-weight="600" fill="#a5f3fc" text-anchor="middle">3 new</text>
-      </g>
-      <g class="kRow" style="animation-delay:0s">
-        <rect x="12" y="40" width="166" height="30" rx="8" fill="#ffffff" fill-opacity="0.04"/>
-        <path d="M22 47h8l4 4v12h-12z" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-linejoin="round"/>
-        <rect x="42" y="48" width="62" height="4" rx="2" fill="#ffffff" fill-opacity="0.22"/><rect x="42" y="57" width="40" height="4" rx="2" fill="#ffffff" fill-opacity="0.12"/>
-        <g class="kParse" style="animation-delay:0s"><rect x="118" y="48" width="52" height="14" rx="7" fill="#f59e0b" fill-opacity="0.15"/><circle class="kSpin" cx="128" cy="55" r="3.5" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="9 5"/><text class="mono" x="135" y="58.5" font-size="8" fill="#fcd34d">parsing</text></g>
-        <g class="kDone" style="animation-delay:0s"><rect x="118" y="48" width="52" height="14" rx="7" fill="#34d399" fill-opacity="0.15"/><path d="M126 55l3 3 5-6" fill="none" stroke="#34d399" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><text class="mono" x="138" y="58.5" font-size="8" fill="#a7f3d0">filed</text></g>
-      </g>
-      <g class="kRow" style="animation-delay:.5s">
-        <rect x="12" y="78" width="166" height="30" rx="8" fill="#ffffff" fill-opacity="0.04"/>
-        <path d="M22 85h8l4 4v12h-12z" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-linejoin="round"/>
-        <rect x="42" y="86" width="50" height="4" rx="2" fill="#ffffff" fill-opacity="0.22"/><rect x="42" y="95" width="56" height="4" rx="2" fill="#ffffff" fill-opacity="0.12"/>
-        <g class="kParse" style="animation-delay:.5s"><rect x="118" y="86" width="52" height="14" rx="7" fill="#f59e0b" fill-opacity="0.15"/><circle class="kSpin" cx="128" cy="93" r="3.5" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="9 5"/><text class="mono" x="135" y="96.5" font-size="8" fill="#fcd34d">parsing</text></g>
-        <g class="kDone" style="animation-delay:.5s"><rect x="118" y="86" width="52" height="14" rx="7" fill="#34d399" fill-opacity="0.15"/><path d="M126 93l3 3 5-6" fill="none" stroke="#34d399" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><text class="mono" x="138" y="96.5" font-size="8" fill="#a7f3d0">filed</text></g>
-      </g>
-      <g class="kRow" style="animation-delay:1s">
-        <rect x="12" y="116" width="166" height="30" rx="8" fill="#ffffff" fill-opacity="0.04"/>
-        <path d="M22 123h8l4 4v12h-12z" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-linejoin="round"/>
-        <rect x="42" y="124" width="68" height="4" rx="2" fill="#ffffff" fill-opacity="0.22"/><rect x="42" y="133" width="34" height="4" rx="2" fill="#ffffff" fill-opacity="0.12"/>
-        <g class="kParse" style="animation-delay:1s"><rect x="118" y="124" width="52" height="14" rx="7" fill="#f59e0b" fill-opacity="0.15"/><circle class="kSpin" cx="128" cy="131" r="3.5" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="9 5"/><text class="mono" x="135" y="134.5" font-size="8" fill="#fcd34d">parsing</text></g>
-        <g class="kDone" style="animation-delay:1s"><rect x="118" y="124" width="52" height="14" rx="7" fill="#34d399" fill-opacity="0.15"/><path d="M126 131l3 3 5-6" fill="none" stroke="#34d399" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><text class="mono" x="138" y="134.5" font-size="8" fill="#a7f3d0">filed</text></g>
-      </g>
-      <text class="mono" x="14" y="166" font-size="8.5" fill="#7c8aa3">OCR · classify · route</text>
-      <text class="mono kPct" x="176" y="166" font-size="8.5" font-weight="700" fill="#67e8f9" text-anchor="end">100%</text>
-      <rect x="14" y="171" width="162" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.08"/>
-      <rect class="kProg" x="14" y="171" width="162" height="5" rx="2.5" fill="url(#cyanLine)"/>
-    </g>
-  </g>
- </g>
-</g>
+  <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--accent)" stop-opacity="0"/><stop offset="1" stop-color="var(--accent)" stop-opacity=".35"/></linearGradient>
+  <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--accent)" stop-opacity=".28"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1000" height="630" rx="28" class="ground"/>
+<rect x=".5" y=".5" width="999" height="629" rx="28" fill="none" class="border" stroke-width="1" opacity=".6"/>
+<text x="40" y="54" font-size="13" font-weight="500" class="sans secondary rise" style="animation-delay:.05s">What I'm building</text>
+<text x="40" y="92" font-size="34" font-weight="600" letter-spacing="-.02em" class="sans label rise" style="animation-delay:.1s">Four products, one backbone.</text>
+<text x="40" y="120" font-size="16" class="sans secondary rise" style="animation-delay:.15s">Each product carries only what makes it different — auth, signing, storage and payments are shared services.</text>
 
-<!-- ===================== SIGNPROOF ===================== -->
-<g transform="translate(514,0)">
- <g class="card" style="animation-delay:.2s">
-  <rect width="486" height="240" rx="18" fill="url(#pbg)" stroke="#ffffff" stroke-opacity="0.08"/>
-  <rect x="28" y="28" width="40" height="40" rx="12" fill="#a78bfa" fill-opacity="0.12" stroke="#a78bfa" stroke-opacity="0.35"/>
-  <path d="M37 58c5-12 9-16 17-18l-3 7c6-2 8-1 7 3-6 4-10 5-17 9z" fill="none" stroke="#c4b5fd" stroke-width="1.8" stroke-linejoin="round"/>
-  <path d="M38 60h18" stroke="#c4b5fd" stroke-width="1.8" stroke-linecap="round"/>
-  <g class="sans">
-    <text x="80" y="47" font-size="22" font-weight="800" letter-spacing="-.5" fill="#f1f4fb">SignProof</text>
-    <text x="80" y="64" font-size="11.5" fill="#7c8aa3">Canadian e-signature platform</text>
-    <rect x="28" y="142" width="98" height="24" rx="12" fill="#a78bfa" fill-opacity="0.1" stroke="#a78bfa" stroke-opacity="0.3"/>
-    <text x="77" y="158" font-size="11" font-weight="600" fill="#ddd6fe" text-anchor="middle">e-Signature</text>
-    <text x="28" y="104" font-size="13" fill="#aab6c9">Legally sound signing with tamper-</text>
-    <text x="28" y="124" font-size="13" fill="#aab6c9">evident audit trails and proof.</text>
-  </g>
-  <g class="mono">
-    <rect x="28" y="192" width="54" height="22" rx="7" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1"/><text x="55" y="207" font-size="10.5" fill="#c7d2fe" text-anchor="middle">.NET 8</text>
-    <rect x="90" y="192" width="42" height="22" rx="7" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1"/><text x="111" y="207" font-size="10.5" fill="#c7d2fe" text-anchor="middle">PKI</text>
-    <rect x="140" y="192" width="84" height="22" rx="7" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1"/><text x="182" y="207" font-size="10.5" fill="#c7d2fe" text-anchor="middle">Audit trail</text>
-  </g>
-  <!-- motif: document + signature -->
-  <g transform="translate(268,28)">
-    <rect width="190" height="184" rx="12" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.07"/>
-    <g clip-path="url(#motifClip)">
-      <rect x="24" y="16" width="142" height="152" rx="8" fill="#eef2f7"/>
-      <rect x="38" y="30" width="60" height="5" rx="2.5" fill="#94a3b8"/>
-      <rect x="38" y="44" width="110" height="4" rx="2" fill="#cbd5e1"/>
-      <rect x="38" y="54" width="96" height="4" rx="2" fill="#cbd5e1"/>
-      <rect x="38" y="64" width="104" height="4" rx="2" fill="#cbd5e1"/>
-      <rect x="38" y="74" width="72" height="4" rx="2" fill="#cbd5e1"/>
-      <line x1="38" y1="124" x2="150" y2="124" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 2"/>
-      <text class="sans" x="38" y="135" font-size="7" fill="#94a3b8">SIGNATURE</text>
-      <text class="sans" x="38" y="152" font-size="7" fill="#94a3b8">DATE  2026-10-14</text>
-      <path class="sig" pathLength="1" d="M42 118c4-16 9-24 13-12 3 9-3 17-7 14-4-4 6-18 15-20 7-2 2 14 9 12 6-2 8-14 14-10 5 4-1 14 7 10 7-4 9-14 17-8 5 4 0 12 8 8 7-4 10-9 18-6 4 2 6 5 10 4" fill="none" stroke="#2e1065" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <g class="pen">
-        <path d="M44 114l6-6 3 3-6 6-4 1z" fill="#c4b5fd" stroke="#4c1d95" stroke-width="1"/>
+  <g class="card-in" style="animation-delay:0.15s">
+    <rect x="40.0" y="150" width="452.0" height="212" rx="24" class="surface border" stroke-width="1" filter="url(#cardShadow)"/>
+    <rect x="60.0" y="170" width="44" height="44" rx="14" fill="var(--accent-soft)"/>
+    <g transform="translate(71.0,181)"><path d="M11 4v14M4 11h14" stroke-width="2.4" stroke-linecap="round" class="accent-stroke"/></g>
+    <text x="60.0" y="250" font-size="20" font-weight="600" letter-spacing="-.015em" class="sans label">Klinova</text>
+    <g class="tag"><rect x="60.0" y="268" width="77.1" height="20" rx="4" class="tag-neutral"/><text x="68.0" y="282.1" font-size="11.5" font-weight="500" class="sans tag-neutral-text">Healthcare</text></g>
+    <text x="60.0" y="304" font-size="13.5" class="sans secondary">Multi-tenant platform for</text><text x="60.0" y="323" font-size="13.5" class="sans secondary">pharmacies: fax intake, clinical</text><text x="60.0" y="342" font-size="13.5" class="sans secondary">workflows and billing.</text>
+  </g><g class="card-in" style="animation-delay:0.25s">
+    <rect x="290.0" y="164" width="190" height="184" rx="12" class="surface border" stroke-width="1"/>
+    
+      
+      <rect x="300.0" y="221" width="26" height="26" rx="7" class="tag-neutral"/>
+      <g transform="translate(304.0,225)"><path d="M5 2.5h5.5L14.5 6.5V15a1 1 0 0 1-1 1h-8.5a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1z M10.5 2.5v4h4 M6.5 9.5h5 M6.5 12.5h5" fill="none" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" class="ink2"/></g>
+      <text x="334.0" y="231" font-size="11.5" font-weight="500" class="sans label">Rx renewal</text>
+      <text x="334.0" y="244" font-size="9.5" class="sans secondary">2 pages · 09:12</text>
+      <g transform="translate(414.2,0)"><g class="tag"><rect x="0" y="224" width="55.8" height="20" rx="4" class="tag-success"/><g transform="translate(8,228.0)"><path d="M2.5 6.5l2.5 2.5 4.5-5" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="success-stroke"/></g><text x="22.0" y="238.0" font-size="11" font-weight="500" class="sans tag-success-text">Filed</text></g></g>
+      <path d="M334.0 256 H470.0" class="sep" stroke-width="1"/>
+      <rect x="300.0" y="265" width="26" height="26" rx="7" class="tag-neutral"/>
+      <g transform="translate(304.0,269)"><path d="M5 2.5h5.5L14.5 6.5V15a1 1 0 0 1-1 1h-8.5a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1z M10.5 2.5v4h4 M6.5 9.5h5 M6.5 12.5h5" fill="none" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" class="ink2"/></g>
+      <text x="334.0" y="275" font-size="11.5" font-weight="500" class="sans label">Lab order</text>
+      <text x="334.0" y="288" font-size="9.5" class="sans secondary">1 page · 09:15</text>
+      <g class="kA" transform="translate(400.0,0)"><g class="tag"><rect x="0" y="268" width="70.0" height="20" rx="4" class="tag-neutral"/><g transform="translate(8,272.0)"><circle cx="6" cy="6" r="4.4" fill="none" stroke-width="1.6" stroke-dasharray="14 9" stroke-linecap="round" class="ink2 spin"/></g><text x="22.0" y="282.0" font-size="11" font-weight="500" class="sans tag-neutral-text">Parsing</text></g></g><g class="kB" transform="translate(414.2,0)"><g class="tag"><rect x="0" y="268" width="55.8" height="20" rx="4" class="tag-success"/><g transform="translate(8,272.0)"><path d="M2.5 6.5l2.5 2.5 4.5-5" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="success-stroke"/></g><text x="22.0" y="282.0" font-size="11" font-weight="500" class="sans tag-success-text">Filed</text></g></g>
+      <path d="M334.0 300 H470.0" class="sep" stroke-width="1"/>
+      <rect x="300.0" y="309" width="26" height="26" rx="7" class="tag-neutral"/>
+      <g transform="translate(304.0,313)"><path d="M5 2.5h5.5L14.5 6.5V15a1 1 0 0 1-1 1h-8.5a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1z M10.5 2.5v4h4 M6.5 9.5h5 M6.5 12.5h5" fill="none" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" class="ink2"/></g>
+      <text x="334.0" y="319" font-size="11.5" font-weight="500" class="sans label">Referral</text>
+      <text x="334.0" y="332" font-size="9.5" class="sans secondary">3 pages · 09:21</text>
+      <g class="kA2" transform="translate(399.4,0)"><g class="tag"><rect x="0" y="312" width="70.6" height="20" rx="4" class="tag-neutral"/><g transform="translate(8,316.0)"><circle cx="6" cy="6" r="4.6" fill="none" stroke-width="1.5" class="ink2"/><path d="M6 3.6V6l1.8 1.2" fill="none" stroke-width="1.5" stroke-linecap="round" class="ink2"/></g><text x="22.0" y="326.0" font-size="11" font-weight="500" class="sans tag-neutral-text">Queued</text></g></g><g class="kB2" transform="translate(414.2,0)"><g class="tag"><rect x="0" y="312" width="55.8" height="20" rx="4" class="tag-success"/><g transform="translate(8,316.0)"><path d="M2.5 6.5l2.5 2.5 4.5-5" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="success-stroke"/></g><text x="22.0" y="326.0" font-size="11" font-weight="500" class="sans tag-success-text">Filed</text></g></g>
+    <!-- floating glass header -->
+    <g class="glass-wrap "><rect x="298.0" y="172" width="174" height="30" rx="15.0" class="glass" stroke-width="1" filter="url(#glassShadow)"/><path d="M304.75 173.5 H465.25" class="glass-hl" stroke-width="1" stroke-linecap="round" opacity=".9"/></g>
+    <text x="310.0" y="191" font-size="11.5" font-weight="600" class="sans label">Fax intake</text>
+    <text x="462.0" y="189" font-size="10" font-weight="600" text-anchor="end" class="sans secondary kcount">2 pending</text><text x="462.0" y="189" font-size="10" font-weight="600" text-anchor="end" class="sans secondary kcount2">1 pending</text><text x="462.0" y="189" font-size="10" font-weight="600" text-anchor="end" class="sans tag-success-text kcount3">All filed</text></g>
+  <g class="card-in" style="animation-delay:0.27s">
+    <rect x="508.0" y="150" width="452.0" height="212" rx="24" class="surface border" stroke-width="1" filter="url(#cardShadow)"/>
+    <rect x="528.0" y="170" width="44" height="44" rx="14" fill="var(--accent-soft)"/>
+    <g transform="translate(539.0,181)"><path d="M4 16c3-7 6-10 10-11l-2 4c3-1 5 0 4 2-3 2-6 3-9 5z M4.5 18h13" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" class="accent-stroke"/></g>
+    <text x="528.0" y="250" font-size="20" font-weight="600" letter-spacing="-.015em" class="sans label">SignProof</text>
+    <g class="tag"><rect x="528.0" y="268" width="81.3" height="20" rx="4" class="tag-neutral"/><text x="536.0" y="282.1" font-size="11.5" font-weight="500" class="sans tag-neutral-text">e-Signature</text></g>
+    <text x="528.0" y="304" font-size="13.5" class="sans secondary">Canadian e-signature with</text><text x="528.0" y="323" font-size="13.5" class="sans secondary">tamper-evident audit trails,</text><text x="528.0" y="342" font-size="13.5" class="sans secondary">hosted in Canada.</text>
+  </g><g class="card-in" style="animation-delay:0.37s">
+    <rect x="758.0" y="164" width="190" height="184" rx="12" class="ground"/>
+    <rect x="780.0" y="176" width="146" height="172" rx="8" class="paper" filter="url(#cardShadow)"/>
+    <rect x="794.0" y="190" width="60" height="5" rx="2.5" fill="#667085"/>
+    <rect x="794.0" y="204" width="116" height="4" rx="2" fill="#E4E7EC"/>
+    <rect x="794.0" y="214" width="100" height="4" rx="2" fill="#E4E7EC"/>
+    <rect x="794.0" y="224" width="110" height="4" rx="2" fill="#E4E7EC"/>
+    <rect x="794.0" y="234" width="74" height="4" rx="2" fill="#E4E7EC"/>
+    <path d="M794.0 290 H912.0" stroke="#98A2B3" stroke-width="1" stroke-dasharray="3 2"/>
+    <text x="794.0" y="302" font-size="7" font-weight="500" letter-spacing=".08em" class="sans paper-mute">SIGNATURE</text>
+    <path class="sig" pathLength="1" d="M798.0 284c4-16 9-24 13-12 3 9-3 17-7 14-4-4 6-18 15-20 7-2 2 14 9 12 6-2 8-14 14-10 5 4-1 14 7 10 7-4 9-14 17-8 5 4 0 12 8 8 7-4 10-9 18-6 4 2 6 5 10 4" fill="none" stroke="#1B2A4A" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="pen"><path d="M800.0 280l6-6 3 3-6 6-4 1z" fill="#F2F4F7" stroke="#101828" stroke-width="1"/></g>
+    <g transform="translate(900.0,200)"><g class="seal">
+      <circle r="20" class="accent-fill"/>
+      <circle r="15.5" fill="none" stroke="var(--on-accent)" stroke-width="1" stroke-dasharray="2.5 2" opacity=".8"/>
+      <path d="M-7 0l5 5 9-10" fill="none" stroke="var(--on-accent)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g></g>
+    <g class="sbar">
+      <g class="glass-wrap "><rect x="772.0" y="310" width="162" height="30" rx="15.0" class="glass" stroke-width="1" filter="url(#glassShadow)"/><path d="M778.75 311.5 H927.25" class="glass-hl" stroke-width="1" stroke-linecap="round" opacity=".9"/></g>
+      <g transform="translate(784.0,319)"><path d="M2.5 6.5l2.5 2.5 4.5-5" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="success-stroke"/></g>
+      <text x="802.0" y="329" font-size="10.5" font-weight="500" class="sans label">Sealed</text>
+      <text x="922.0" y="329" font-size="9.5" text-anchor="end" class="mono secondary">9f3a…c21e</text>
+    </g></g>
+  <g class="card-in" style="animation-delay:0.39s">
+    <rect x="40.0" y="378" width="452.0" height="212" rx="24" class="surface border" stroke-width="1" filter="url(#cardShadow)"/>
+    <rect x="60.0" y="398" width="44" height="44" rx="14" fill="var(--accent-soft)"/>
+    <g transform="translate(71.0,409)"><circle cx="8" cy="14" r="2" class="accent-fill"/><path d="M11 10.5a5 5 0 0 1 1.5 3.5M14 7.5a9 9 0 0 1 2.6 6.5M17 4.5a13 13 0 0 1 3.8 9.5" fill="none" stroke-width="1.8" stroke-linecap="round" class="accent-stroke"/></g>
+    <text x="60.0" y="478" font-size="20" font-weight="600" letter-spacing="-.015em" class="sans label">PartTrace</text>
+    <g class="tag"><rect x="60.0" y="496" width="97.3" height="20" rx="4" class="tag-neutral"/><text x="68.0" y="510.1" font-size="11.5" font-weight="500" class="sans tag-neutral-text">Manufacturing</text></g>
+    <text x="60.0" y="532" font-size="13.5" class="sans secondary">Standalone, in-facility RFID</text><text x="60.0" y="551" font-size="13.5" class="sans secondary">parts tracking for small and</text><text x="60.0" y="570" font-size="13.5" class="sans secondary">midsize manufacturers.</text>
+  </g><g class="card-in" style="animation-delay:0.49s">
+    <rect x="290.0" y="392" width="190" height="184" rx="12" class="ground"/>
+    <circle cx="385.0" cy="476" r="68" fill="none" class="sep" stroke-width="1"/>
+    <circle cx="385.0" cy="476" r="46" fill="none" class="sep" stroke-width="1"/>
+    <circle cx="385.0" cy="476" r="24" fill="none" class="sep" stroke-width="1"/>
+    <path d="M317.0 476H453.0M385.0 408V544" class="sep" stroke-width="1" opacity=".7"/>
+    <g class="sweep"><path d="M385.0 476L385.0 408A68 68 0 0 1 433.1 427.9Z" fill="url(#sweepGrad)"/><path d="M385.0 476L385.0 408" class="accent-stroke" stroke-width="1.4" opacity=".9"/></g>
+    <circle cx="385.0" cy="476" r="3" class="accent-fill"/>
+    <circle class="blip accent-stroke" style="animation-delay:0.5s" cx="411.0" cy="444" r="3" fill="none" stroke-width="1"/><circle cx="411.0" cy="444" r="3" class="accent-fill"/><circle class="blip accent-stroke" style="animation-delay:1.7s" cx="417.0" cy="520" r="3" fill="none" stroke-width="1"/><circle cx="417.0" cy="520" r="3" class="accent-fill"/><circle class="blip accent-stroke" style="animation-delay:2.6s" cx="357.0" cy="498" r="3" fill="none" stroke-width="1"/><circle cx="357.0" cy="498" r="3" class="accent-fill"/><circle class="blip accent-stroke" style="animation-delay:3.4s" cx="339.0" cy="452" r="3" fill="none" stroke-width="1"/><circle cx="339.0" cy="452" r="3" class="accent-fill"/>
+    <g transform="translate(419.2,0)"><g class="tag"><rect x="0" y="402" width="50.8" height="18" rx="4" class="tag-success"/><g transform="translate(8,405.0)"><circle cx="6" cy="6" r="2.6" class="success-fill"/></g><text x="22.0" y="414.8" font-size="10.5" font-weight="500" class="sans tag-success-text">Live</text></g></g>
+    <g transform="translate(300.0,0)"><g class="tag"><rect x="0" y="542" width="94.1" height="20" rx="4" class="tag-neutral"/><text x="8.0" y="555.8" font-size="10.5" font-weight="500" class="sans tag-neutral-text">PT-0418 · Bay 3</text></g></g></g>
+  <g class="card-in" style="animation-delay:0.51s">
+    <rect x="508.0" y="378" width="452.0" height="212" rx="24" class="surface border" stroke-width="1" filter="url(#cardShadow)"/>
+    <rect x="528.0" y="398" width="44" height="44" rx="14" fill="var(--accent-soft)"/>
+    <g transform="translate(539.0,409)"><path d="M3 15l5-6 4 3 6-8" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="accent-stroke"/><path d="M14 4h4v4" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="accent-stroke"/></g>
+    <text x="528.0" y="478" font-size="20" font-weight="600" letter-spacing="-.015em" class="sans label">PolicyPulse</text>
+    <g class="tag"><rect x="528.0" y="496" width="68.1" height="20" rx="4" class="tag-neutral"/><text x="536.0" y="510.1" font-size="11.5" font-weight="500" class="sans tag-neutral-text">Research</text></g>
+    <text x="528.0" y="532" font-size="13.5" class="sans secondary">An engine that turns policy and</text><text x="528.0" y="551" font-size="13.5" class="sans secondary">regulatory signals into</text><text x="528.0" y="570" font-size="13.5" class="sans secondary">investment research.</text>
+  </g><g class="card-in" style="animation-delay:0.61s">
+    <rect x="758.0" y="392" width="190" height="184" rx="12" class="ground"/>
+    
+      <g class="sigrow" style="animation-delay:0.2s">
+        <rect x="768.0" y="404" width="112" height="22" rx="6" class="surface border" stroke-width="1"/>
+        <g transform="translate(773.0,409)"><circle cx="6" cy="6" r="2.6" class="success-fill"/></g>
+        <text x="790.0" y="419" font-size="9.5" font-weight="500" class="sans label">Rate decision · hold</text>
       </g>
-      <g class="seal">
-        <circle cx="146" cy="38" r="22" fill="#a78bfa"/>
-        <circle cx="146" cy="38" r="17" fill="none" stroke="#f5f3ff" stroke-width="1.2" stroke-dasharray="3 2"/>
-        <path d="M138 38l5 5 10-10" fill="none" stroke="#1e1b4b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <g class="sigrow" style="animation-delay:0.9s">
+        <rect x="768.0" y="430" width="112" height="22" rx="6" class="surface border" stroke-width="1"/>
+        <g transform="translate(773.0,435)"><circle cx="6" cy="6" r="2.6" class="warning-fill"/></g>
+        <text x="790.0" y="445" font-size="9.5" font-weight="500" class="sans label">Carbon levy · draft</text>
       </g>
-      <g class="hash">
-        <rect x="10" y="164" width="170" height="16" rx="6" fill="#0b0e17"/>
-        <text class="mono" x="95" y="175" font-size="8" fill="#c4b5fd" text-anchor="middle">sha256 · 9f3a…c21e  ·  sealed ✓</text>
+      <g class="sigrow" style="animation-delay:1.6s">
+        <rect x="768.0" y="456" width="112" height="22" rx="6" class="surface border" stroke-width="1"/>
+        <g transform="translate(773.0,461)"><circle cx="6" cy="6" r="2.6" class="info-fill"/></g>
+        <text x="790.0" y="471" font-size="9.5" font-weight="500" class="sans label">Filing · 10-K</text>
       </g>
-    </g>
-  </g>
- </g>
-</g>
-
-<!-- ===================== PARTTRACE ===================== -->
-<g transform="translate(0,264)">
- <g class="card" style="animation-delay:.35s">
-  <rect width="486" height="240" rx="18" fill="url(#pbg)" stroke="#ffffff" stroke-opacity="0.08"/>
-  <rect x="28" y="28" width="40" height="40" rx="12" fill="#f59e0b" fill-opacity="0.12" stroke="#f59e0b" stroke-opacity="0.35"/>
-  <circle cx="42" cy="54" r="2.6" fill="#fbbf24"/>
-  <path d="M46 50a6 6 0 0 1 2 5M50 45a12 12 0 0 1 3.5 10M54 40a18 18 0 0 1 5 15" fill="none" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round"/>
-  <g class="sans">
-    <text x="80" y="47" font-size="22" font-weight="800" letter-spacing="-.5" fill="#f1f4fb">PartTrace</text>
-    <text x="80" y="64" font-size="11.5" fill="#7c8aa3">RFID parts tracking</text>
-    <rect x="28" y="142" width="112" height="24" rx="12" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-opacity="0.3"/>
-    <text x="84" y="158" font-size="11" font-weight="600" fill="#fde68a" text-anchor="middle">Manufacturing</text>
-    <text x="28" y="104" font-size="13" fill="#aab6c9">In-facility visibility for small and</text>
-    <text x="28" y="124" font-size="13" fill="#aab6c9">midsize manufacturers. No scans.</text>
-  </g>
-  <g class="mono">
-    <rect x="28" y="192" width="48" height="22" rx="7" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1"/><text x="52" y="207" font-size="10.5" fill="#c7d2fe" text-anchor="middle">RFID</text>
-    <rect x="84" y="192" width="74" height="22" rx="7" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1"/><text x="121" y="207" font-size="10.5" fill="#c7d2fe" text-anchor="middle">Real-time</text>
-    <rect x="166" y="192" width="70" height="22" rx="7" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1"/><text x="201" y="207" font-size="10.5" fill="#c7d2fe" text-anchor="middle">Postgres</text>
-  </g>
-  <!-- motif: radar -->
-  <g transform="translate(268,28)">
-    <rect width="190" height="184" rx="12" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.07"/>
-    <g clip-path="url(#motifClip)">
-      <circle cx="95" cy="88" r="72" fill="none" stroke="#f59e0b" stroke-opacity="0.12"/>
-      <circle cx="95" cy="88" r="48" fill="none" stroke="#f59e0b" stroke-opacity="0.18"/>
-      <circle cx="95" cy="88" r="24" fill="none" stroke="#f59e0b" stroke-opacity="0.25"/>
-      <line x1="23" y1="88" x2="167" y2="88" stroke="#f59e0b" stroke-opacity="0.1"/>
-      <line x1="95" y1="16" x2="95" y2="160" stroke="#f59e0b" stroke-opacity="0.1"/>
-      <g class="sweep">
-        <path d="M95 88L95 16A72 72 0 0 1 131 25.6Z" fill="url(#sweepGrad)"/>
-        <line x1="95" y1="88" x2="131" y2="25.6" stroke="#fbbf24" stroke-opacity="0.8" stroke-width="1.2"/>
-      </g>
-      <circle cx="95" cy="88" r="3" fill="#fbbf24"/>
-      <!-- blips: delays match sweep angle (4s per 360°) -->
-      <circle class="blipRing" style="animation-delay:.52s" cx="120.7" cy="57.4" r="3" fill="none" stroke="#fbbf24" stroke-width="1"/>
-      <circle class="blipDot" style="animation-delay:.52s" cx="120.7" cy="57.4" r="3" fill="#fbbf24"/>
-      <circle class="blipRing" style="animation-delay:1.75s" cx="125" cy="140" r="3" fill="none" stroke="#fbbf24" stroke-width="1"/>
-      <circle class="blipDot" style="animation-delay:1.75s" cx="125" cy="140" r="3" fill="#fbbf24"/>
-      <circle class="blipRing" style="animation-delay:2.64s" cx="72" cy="107.3" r="3" fill="none" stroke="#fbbf24" stroke-width="1"/>
-      <circle class="blipDot" style="animation-delay:2.64s" cx="72" cy="107.3" r="3" fill="#fbbf24"/>
-      <circle class="blipRing" style="animation-delay:3.42s" cx="44.8" cy="59" r="3" fill="none" stroke="#fbbf24" stroke-width="1"/>
-      <circle class="blipDot" style="animation-delay:3.42s" cx="44.8" cy="59" r="3" fill="#fbbf24"/>
-      <g class="tagFlash" style="animation-delay:.52s">
-        <rect x="128" y="44" width="52" height="15" rx="5" fill="#0b0e17" stroke="#f59e0b" stroke-opacity="0.4"/>
-        <text class="mono" x="154" y="54.5" font-size="8" fill="#fde68a" text-anchor="middle">PT-0418</text>
-      </g>
-      <rect x="10" y="164" width="92" height="14" rx="5" fill="#0b0e17"/>
-      <text class="mono" x="16" y="174" font-size="8" fill="#94a3b8">12 tags · Bay 3</text>
-      <rect x="130" y="8" width="50" height="14" rx="7" fill="#34d399" fill-opacity="0.12"/>
-      <circle cx="139" cy="15" r="2.3" fill="#34d399"/>
-      <text class="mono" x="145" y="18" font-size="8" font-weight="600" fill="#a7f3d0">LIVE</text>
-    </g>
-  </g>
- </g>
-</g>
-
-<!-- ===================== POLICYPULSE ===================== -->
-<g transform="translate(514,264)">
- <g class="card" style="animation-delay:.5s">
-  <rect width="486" height="240" rx="18" fill="url(#pbg)" stroke="#ffffff" stroke-opacity="0.08"/>
-  <rect x="28" y="28" width="40" height="40" rx="12" fill="#34d399" fill-opacity="0.12" stroke="#34d399" stroke-opacity="0.35"/>
-  <path d="M36 56l7-9 5 5 9-12" fill="none" stroke="#6ee7b7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M52 40h5v5" fill="none" stroke="#6ee7b7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <g class="sans">
-    <text x="80" y="47" font-size="22" font-weight="800" letter-spacing="-.5" fill="#f1f4fb">PolicyPulse</text>
-    <text x="80" y="64" font-size="11.5" fill="#7c8aa3">Policy-driven investment research</text>
-    <rect x="28" y="142" width="78" height="24" rx="12" fill="#34d399" fill-opacity="0.1" stroke="#34d399" stroke-opacity="0.3"/>
-    <text x="67" y="158" font-size="11" font-weight="600" fill="#a7f3d0" text-anchor="middle">FinTech</text>
-    <text x="28" y="104" font-size="13" fill="#aab6c9">Turns regulatory and policy signals</text>
-    <text x="28" y="124" font-size="13" fill="#aab6c9">into ranked, explainable research.</text>
-  </g>
-  <g class="mono">
-    <rect x="28" y="192" width="64" height="22" rx="7" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1"/><text x="60" y="207" font-size="10.5" fill="#c7d2fe" text-anchor="middle">Signals</text>
-    <rect x="100" y="192" width="60" height="22" rx="7" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1"/><text x="130" y="207" font-size="10.5" fill="#c7d2fe" text-anchor="middle">.NET 8</text>
-    <rect x="168" y="192" width="54" height="22" rx="7" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1"/><text x="195" y="207" font-size="10.5" fill="#c7d2fe" text-anchor="middle">React</text>
-  </g>
-  <!-- motif: signals + score ring + sparkline -->
-  <g transform="translate(268,28)">
-    <rect width="190" height="184" rx="12" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.07"/>
-    <g clip-path="url(#motifClip)">
-      <g class="sigChip" style="animation-delay:.2s"><rect x="12" y="14" width="104" height="18" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08"/><circle cx="22" cy="23" r="2.5" fill="#34d399"/><text class="mono" x="29" y="26" font-size="8" fill="#d1d5db">Fed · rate hold</text></g>
-      <g class="sigChip" style="animation-delay:.9s"><rect x="12" y="38" width="104" height="18" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08"/><circle cx="22" cy="47" r="2.5" fill="#fbbf24"/><text class="mono" x="29" y="50" font-size="8" fill="#d1d5db">SEC · 10-K filed</text></g>
-      <g class="sigChip" style="animation-delay:1.6s"><rect x="12" y="62" width="104" height="18" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08"/><circle cx="22" cy="71" r="2.5" fill="#60a5fa"/><text class="mono" x="29" y="74" font-size="8" fill="#d1d5db">EU · carbon levy</text></g>
-      <!-- score ring -->
-      <circle cx="152" cy="46" r="22" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="5"/>
-      <circle class="ring" pathLength="1" cx="152" cy="46" r="22" fill="none" stroke="#34d399" stroke-width="5" stroke-linecap="round" transform="rotate(-90 152 46)"/>
-      <g class="ringTxt sans">
-        <text x="152" y="49" font-size="13" font-weight="800" fill="#f1f4fb" text-anchor="middle">72</text>
-        <text x="152" y="80" font-size="7.5" fill="#7c8aa3" text-anchor="middle" letter-spacing="1">IMPACT</text>
-      </g>
-      <!-- sparkline -->
-      <line x1="12" y1="166.5" x2="178" y2="166.5" stroke="#ffffff" stroke-opacity="0.08"/>
-      <path class="sparkFill" d="M14 150L34 140L54 146L74 128L94 134L114 118L134 124L154 106L176 98L176 166L14 166Z" fill="url(#sparkArea)"/>
-      <path class="spark" pathLength="1" d="M14 150L34 140L54 146L74 128L94 134L114 118L134 124L154 106L176 98" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle class="sparkPulse" cx="176" cy="98" r="3" fill="#34d399"/>
-      <circle class="sparkDot" cx="176" cy="98" r="3.2" fill="#34d399" stroke="#0e1422" stroke-width="1.5"/>
-      <text class="mono" x="14" y="102" font-size="8" fill="#7c8aa3">thesis confidence</text>
-    </g>
-  </g>
- </g>
-</g>
+    <circle cx="916.0" cy="432" r="22" fill="none" class="sep" stroke-width="5"/>
+    <circle class="ring accent-stroke" pathLength="1" cx="916.0" cy="432" r="22" fill="none" stroke-width="5" stroke-linecap="round" transform="rotate(-90 916.0 432)"/>
+    <text class="ringtxt sans label" x="916.0" y="436.5" font-size="13" font-weight="600" text-anchor="middle">72</text>
+    <text class="ringtxt sans secondary" x="916.0" y="468" font-size="8.5" font-weight="500" text-anchor="middle" letter-spacing=".06em">IMPACT</text>
+    <text x="770.0" y="498" font-size="9.5" font-weight="500" class="sans secondary">Thesis confidence</text>
+    <path d="M770.0 562H936.0" class="sep" stroke-width="1"/>
+    <path class="sparkfill" d="M772.0 548L794.0 540L816.0 544L838.0 528L860.0 534L882.0 518L904.0 522L934.0 506L934.0 562L772.0 562Z" fill="url(#sparkGrad)"/>
+    <path class="spark accent-stroke" pathLength="1" d="M772.0 548L794.0 540L816.0 544L838.0 528L860.0 534L882.0 518L904.0 522L934.0 506" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="934.0" cy="506" r="3" class="accent-fill ringtxt"/></g>
 </svg>
