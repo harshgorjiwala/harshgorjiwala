@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214.9 56" width="214.9" height="56" role="img" aria-label="See what I'm building">
+<style>
+@font-face{font-family:'Geist';font-style:normal;font-weight:600;src:url(data:font/woff2;base64,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) format('woff2')}
+
+:root{
+  --bg:#FBFBFD; --ground:#F2F4F7; --surface:#FFFFFF; --elevated:#FFFFFF; --paper:#FFFFFF;
+  --label:#101828; --secondary:#475467; --tertiary:#667085; --separator:#E4E7EC;
+  --accent:#0B7A69; --accent-hover:#096B5C; --on-accent:#FFFFFF; --accent-soft:rgba(11,122,105,.12);
+  --success:#067647; --warning:#B54708; --info:#5925DC; --destructive:#B42318;
+  --tag-success:#ECFDF3; --tag-warning:#FFFAEB; --tag-info:#F4F3FF; --tag-neutral:#F2F4F7; --tag-neutral-text:#344054;
+  --glass:rgba(255,255,255,.62); --glass-border:rgba(16,24,40,.08); --glass-highlight:rgba(255,255,255,.9);
+  --track:rgba(16,24,40,.06); --pill:#FFFFFF; --pill-neutral:rgba(16,24,40,.07); --border:rgba(16,24,40,.12);
+  --orb-blue:#C3DDF5; --orb-mint:#CBEDE4; --orb-lilac:#DEDAF6; --orb-opacity:1;
+  --ink:#101828; --mock-ground:#F2F4F7;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0B0D12; --ground:#0B0D12; --surface:#161A22; --elevated:#1E232D;
+    --label:#F5F7FA; --secondary:#A6AFBD; --tertiary:#8A94A6; --separator:#2A303B;
+    --accent:#34C6AE; --accent-hover:#5EE0C9; --on-accent:#04201B; --accent-soft:rgba(52,198,174,.16);
+    --success:#47CD89; --warning:#FDB022; --info:#A48AFB; --destructive:#F97066;
+    --tag-success:rgba(71,205,137,.14); --tag-warning:rgba(253,176,34,.14); --tag-info:rgba(164,138,251,.14); --tag-neutral:rgba(255,255,255,.12); --tag-neutral-text:#D0D5DD;
+    --glass:rgba(38,44,56,.74); --glass-border:rgba(255,255,255,.16); --glass-highlight:rgba(255,255,255,.18);
+    --track:rgba(255,255,255,.08); --pill:#2E3440; --pill-neutral:rgba(255,255,255,.10); --border:rgba(255,255,255,.12);
+    --orb-blue:#1F3A5F; --orb-mint:#16463C; --orb-lilac:#332C5C; --orb-opacity:.9;
+    --ink:#F5F7FA; --mock-ground:#0F1219;
+  }
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important; animation-delay:0s !important; animation-iteration-count:1 !important;}
+}
+
+.sans{font-family:'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif}
+.mono{font-family:'Geist Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace}
+.label{fill:var(--label)} .secondary{fill:var(--secondary)} .tertiary{fill:var(--tertiary)}
+.on-accent{fill:var(--on-accent)} .accent-text{fill:var(--accent)}
+.surface{fill:var(--surface)} .ground{fill:var(--ground)} .bg{fill:var(--bg)}
+.sep{stroke:var(--separator)} .border{stroke:var(--border)}
+.accent-fill{fill:var(--accent)} .accent-stroke{stroke:var(--accent)}
+.ink{stroke:var(--label)} .ink-fill{fill:var(--label)} .ink2{stroke:var(--secondary)}
+.glass{fill:var(--glass);stroke:var(--glass-border)} .glass-hl{stroke:var(--glass-highlight)}
+.track{fill:var(--track)} .pill{fill:var(--pill)} .pill-neutral{fill:var(--pill-neutral)}
+.tag-success{fill:var(--tag-success)} .tag-success-text{fill:var(--success)} .success-stroke{stroke:var(--success)} .success-fill{fill:var(--success)}
+.tag-warning{fill:var(--tag-warning)} .tag-warning-text{fill:var(--warning)} .warning-stroke{stroke:var(--warning)} .warning-fill{fill:var(--warning)}
+.tag-info{fill:var(--tag-info)} .tag-info-text{fill:var(--info)} .info-stroke{stroke:var(--info)} .info-fill{fill:var(--info)}
+.tag-neutral{fill:var(--tag-neutral)} .tag-neutral-text{fill:var(--tag-neutral-text)}
+.orb-blue{fill:var(--orb-blue);opacity:var(--orb-opacity)} .orb-mint{fill:var(--orb-mint);opacity:var(--orb-opacity)} .orb-lilac{fill:var(--orb-lilac);opacity:var(--orb-opacity)}
+.ease{animation-timing-function:cubic-bezier(.22,1,.36,1)}
+
+.sheen{animation:sheen 6s ease-in-out 1.5s infinite}
+@keyframes sheen{0%{transform:translateX(-70px) skewX(-20deg)}35%,100%{transform:translateX(260px) skewX(-20deg)}}
+
+</style>
+<defs>
+  <filter id="glassShadow" x="-20%" y="-40%" width="140%" height="200%">
+    <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#101828" flood-opacity=".10"/>
+  </filter>
+  <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#101828" flood-opacity=".06"/>
+  </filter>
+  <filter id="mockShadow" x="-20%" y="-20%" width="140%" height="150%">
+    <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#101828" flood-opacity=".16"/>
+  </filter>
+  <filter id="pillShadow" x="-20%" y="-40%" width="140%" height="200%">
+    <feDropShadow dx="0" dy="1" stdDeviation="1.4" flood-color="#101828" flood-opacity=".14"/>
+  </filter>
+  <filter id="orbBlur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="55"/></filter>
+</defs>
+<clipPath id="c"><rect x="6" y="6" width="202.9" height="44" rx="22.0"/></clipPath>
+<rect x="6" y="6" width="202.9" height="44" rx="22.0" class="accent-fill" filter="url(#cardShadow)"/>
+<g clip-path="url(#c)"><rect class="sheen" x="6" y="0" width="30" height="56" fill="#fff" opacity=".22"/></g>
+<text x="107.5" y="33.4" font-size="15" font-weight="600" text-anchor="middle" class="sans on-accent">See what I'm building</text>
+</svg>

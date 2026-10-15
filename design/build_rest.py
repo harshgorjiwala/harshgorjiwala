@@ -126,30 +126,20 @@ def build_principles():
 def build_contact():
     H = 150
     email = "harsh7529gorjiwala@gmail.com"
-    p_text, s_text = "Email me", "GitHub"
-    p_w = measure(p_text, 15, 600) + 44
-    s_w = measure(s_text, 15, 600) + 44
-    s_x = W - MX - s_w
-    p_x = s_x - 12 - p_w
     loc_w = measure("Hamilton, Ontario", 13, 500) + 44
+    lx = W - MX - loc_w
     css = kit.TOKENS_CSS + kit.BASE_CSS + """
 .rise{opacity:0;animation:rise .7s cubic-bezier(.22,1,.36,1) both}
 @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-.sheen{animation:sheen 6s ease-in-out 2s infinite}
-@keyframes sheen{0%{transform:translateX(-70px) skewX(-20deg)}35%,100%{transform:translateX(170px) skewX(-20deg)}}
-.pulse{transform-box:fill-box;transform-origin:50% 50%;animation:pulse 2.2s ease-out infinite}
-@keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(3);opacity:0}}
 """
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="t d">
-<title id="t">Say hello — {email} · Hamilton, Ontario · github.com/harshgorjiwala</title>
-<desc id="d">Footer card with an email button and a GitHub button.</desc>
+<title id="t">Say hello — {email} · Hamilton, Ontario</title>
+<desc id="d">Footer card with the email address and location.</desc>
 <style>
 /*FONTS*/
 {css}
 </style>
-<defs>{kit.defs_common()}
-  <clipPath id="pclip"><rect x="{p_x:.1f}" y="53" width="{p_w:.1f}" height="44" rx="22"/></clipPath>
-</defs>
+<defs>{kit.defs_common()}</defs>
 <rect width="{W}" height="{H}" rx="28" class="ground"/>
 <rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="28" fill="none" class="border" stroke-width="1" opacity=".6"/>
 <g class="rise" style="animation-delay:.05s">
@@ -157,22 +147,43 @@ def build_contact():
   <text x="{MX}" y="96" font-size="15" class="sans secondary">{email}</text>
 </g>
 <g class="rise" style="animation-delay:.15s">
-  <rect x="{W - MX - s_w - 12 - p_w - 12 - loc_w:.1f}" y="57" width="{loc_w:.1f}" height="36" rx="18" class="surface border" stroke-width="1"/>
-  <g transform="translate({W - MX - s_w - 12 - p_w - 12 - loc_w + 14:.1f},66)">
+  <rect x="{lx:.1f}" y="57" width="{loc_w:.1f}" height="36" rx="18" class="surface border" stroke-width="1"/>
+  <g transform="translate({lx + 14:.1f},66)">
     <path d="M9 2.5a5.5 5.5 0 0 1 5.5 5.5c0 4-5.5 9-5.5 9S3.5 12 3.5 8A5.5 5.5 0 0 1 9 2.5z" fill="none" stroke-width="1.6" class="ink2"/><circle cx="9" cy="8" r="1.8" class="ink-fill"/>
   </g>
-  <text x="{W - MX - s_w - 12 - p_w - 12 - loc_w + 36:.1f}" y="79.5" font-size="13" font-weight="500" class="sans label">Hamilton, Ontario</text>
+  <text x="{lx + 36:.1f}" y="79.5" font-size="13" font-weight="500" class="sans label">Hamilton, Ontario</text>
 </g>
-<g class="rise" style="animation-delay:.25s">
-  <rect x="{p_x:.1f}" y="53" width="{p_w:.1f}" height="44" rx="22" class="accent-fill"/>
-  <g clip-path="url(#pclip)"><rect class="sheen" x="{p_x:.1f}" y="49" width="30" height="52" fill="#fff" opacity=".22"/></g>
-  <text x="{p_x + p_w / 2:.1f}" y="80.4" font-size="15" font-weight="600" text-anchor="middle" class="sans on-accent">{p_text}</text>
-</g>
-<g class="rise" style="animation-delay:.35s">
-  <rect x="{s_x:.1f}" y="53" width="{s_w:.1f}" height="44" rx="22" class="surface border" stroke-width="1"/>
-  <text x="{s_x + s_w / 2:.1f}" y="80.4" font-size="15" font-weight="600" text-anchor="middle" class="sans label">{s_text}</text>
-</g>
-<text x="{MX}" y="128" font-size="11.5" class="sans tertiary rise" style="animation-delay:.4s">Every graphic on this page is a hand-written SVG with CSS keyframes — no JavaScript, no external requests. Type is Geist (OFL), subset and embedded.</text>
+<text x="{MX}" y="128" font-size="11.5" class="sans tertiary rise" style="animation-delay:.3s">Every graphic on this page is a hand-written SVG with CSS keyframes — no JavaScript, no external requests. Type is Geist (OFL), subset and embedded.</text>
+</svg>
+"""
+
+
+# ============================================================ BUTTONS (real links live in the README)
+def build_button(text, kind="primary"):
+    """One capsule button as its own SVG so the README can wrap it in a real <a>."""
+    h = 44
+    w = measure(text, 15, 600) + 48
+    W2, H2 = w + 12, h + 12
+    css = kit.TOKENS_CSS + kit.BASE_CSS + """
+.sheen{animation:sheen 6s ease-in-out 1.5s infinite}
+@keyframes sheen{0%{transform:translateX(-70px) skewX(-20deg)}35%,100%{transform:translateX(260px) skewX(-20deg)}}
+"""
+    if kind == "primary":
+        body = f"""
+<clipPath id="c"><rect x="6" y="6" width="{w:.1f}" height="{h}" rx="{h/2}"/></clipPath>
+<rect x="6" y="6" width="{w:.1f}" height="{h}" rx="{h/2}" class="accent-fill" filter="url(#cardShadow)"/>
+<g clip-path="url(#c)"><rect class="sheen" x="6" y="0" width="30" height="56" fill="#fff" opacity=".22"/></g>
+<text x="{6 + w/2:.1f}" y="33.4" font-size="15" font-weight="600" text-anchor="middle" class="sans on-accent">{text}</text>"""
+    else:
+        body = f"""
+<rect x="6" y="6" width="{w:.1f}" height="{h}" rx="{h/2}" class="surface border" stroke-width="1" filter="url(#cardShadow)"/>
+<text x="{6 + w/2:.1f}" y="33.4" font-size="15" font-weight="600" text-anchor="middle" class="sans label">{text}</text>"""
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W2:.1f} {H2}" width="{W2:.1f}" height="{H2}" role="img" aria-label="{text}">
+<style>
+/*FONTS*/
+{css}
+</style>
+<defs>{kit.defs_common()}</defs>{body}
 </svg>
 """
 
@@ -182,4 +193,7 @@ if __name__ == "__main__":
     base = sys.argv[1] if len(sys.argv) > 1 else "../assets"
     for name, fn in [("stack", build_stack), ("principles", build_principles), ("contact", build_contact)]:
         n = kit.finish(fn(), f"{base}/{name}.svg")
+        print(f"{name}.svg {n/1024:.1f} KB")
+    for name, text, kind in [("btn-work", "See what I'm building", "primary"), ("btn-touch", "Get in touch", "secondary"), ("btn-email", "Email me", "primary"), ("btn-repos", "Browse the code", "secondary")]:
+        n = kit.finish(build_button(text, kind), f"{base}/{name}.svg", weights=(600,))
         print(f"{name}.svg {n/1024:.1f} KB")

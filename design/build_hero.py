@@ -23,7 +23,7 @@ letters = []
 x = X0
 for i, ch in enumerate(word):
     letters.append(
-        f'<text x="{x:.1f}" y="274" font-size="{HS}" font-weight="600" letter-spacing="{TR}em" '
+        f'<text x="{x:.1f}" y="296" font-size="{HS}" font-weight="600" letter-spacing="{TR}em" '
         f'class="sans label flip" style="animation-delay:{1.05 + i * 0.07:.2f}s">{ch}</text>'
     )
     x += adv[i]
@@ -150,10 +150,10 @@ def status_chip():
     w = measure(txt, 13, 500) + 38
     return f"""
   <g class="rise" style="animation-delay:.3s">
-    <rect x="{X0}" y="108" width="{w:.1f}" height="30" rx="15" class="surface border" stroke-width="1"/>
-    <circle cx="{X0 + 15}" cy="123" r="4" class="success-fill pulse"/>
-    <circle cx="{X0 + 15}" cy="123" r="4" class="success-fill"/>
-    <text x="{X0 + 27}" y="127.6" font-size="13" font-weight="500" class="sans" fill="url(#shimmer)">{txt}</text>
+    <rect x="{X0}" y="128" width="{w:.1f}" height="30" rx="15" class="surface border" stroke-width="1"/>
+    <circle cx="{X0 + 15}" cy="143" r="4" class="success-fill pulse"/>
+    <circle cx="{X0 + 15}" cy="143" r="4" class="success-fill"/>
+    <text x="{X0 + 27}" y="147.6" font-size="13" font-weight="500" class="sans" fill="url(#shimmer)">{txt}</text>
   </g>"""
 
 
@@ -163,19 +163,19 @@ def headline():
     mid = (sw_x1 + sw_x2) / 2
     seal_cx = X0 + line1_w + 36
     return f"""
-  <clipPath id="l1"><rect x="{X0 - 10}" y="150" width="600" height="80"/></clipPath>
-  <clipPath id="l2"><rect x="{X0 - 10}" y="212" width="600" height="80"/></clipPath>
+  <clipPath id="l1"><rect x="{X0 - 10}" y="172" width="600" height="80"/></clipPath>
+  <clipPath id="l2"><rect x="{X0 - 10}" y="234" width="600" height="80"/></clipPath>
   <g clip-path="url(#l1)">
-    <text x="{X0}" y="212" font-size="{HS}" font-weight="600" letter-spacing="{TR}em" class="sans label mask-line" style="animation-delay:.45s">{line1}</text>
+    <text x="{X0}" y="234" font-size="{HS}" font-weight="600" letter-spacing="{TR}em" class="sans label mask-line" style="animation-delay:.45s">{line1}</text>
   </g>
   {''.join(letters)}
   <g clip-path="url(#l2)">
-    <text x="{x_rest:.1f}" y="274" font-size="{HS}" font-weight="600" letter-spacing="{TR}em" class="sans label mask-line" style="animation-delay:.7s">{rest.strip()}</text>
+    <text x="{x_rest:.1f}" y="296" font-size="{HS}" font-weight="600" letter-spacing="{TR}em" class="sans label mask-line" style="animation-delay:.7s">{rest.strip()}</text>
   </g>
   <!-- hand-drawn underline swoosh -->
-  <path class="swoosh accent-stroke" pathLength="1" d="M{sw_x1:.0f} 290 C {mid - 60:.0f} 300, {mid + 90:.0f} 298, {sw_x2:.0f} 283 C {sw_x2 - 40:.0f} 286, {mid:.0f} 292, {mid - 50:.0f} 291" fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>
+  <path class="swoosh accent-stroke" pathLength="1" d="M{sw_x1:.0f} 312 C {mid - 60:.0f} 322, {mid + 90:.0f} 320, {sw_x2:.0f} 305 C {sw_x2 - 40:.0f} 308, {mid:.0f} 314, {mid - 50:.0f} 313" fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>
   <!-- ink seal -->
-  <g transform="translate({seal_cx:.0f},186)"><g class="seal">
+  <g transform="translate({seal_cx:.0f},208)"><g class="seal">
     <circle r="36" fill="none" stroke-width="2.4" class="ink"/>
     <circle r="27" fill="none" stroke-width="1" stroke-dasharray="2.5 2.5" class="ink"/>
     <g class="seal-ring">
@@ -193,7 +193,7 @@ def subhead():
         "shared backbone for auth, signing, storage and payments.",
     ]
     return "".join(
-        f'<text x="{X0}" y="{316 + i * 24}" font-size="17" class="sans secondary rise" style="animation-delay:{1.25 + i * 0.08:.2f}s">{t}</text>'
+        f'<text x="{X0}" y="{344 + i * 24}" font-size="17" class="sans secondary rise" style="animation-delay:{1.25 + i * 0.08:.2f}s">{t}</text>'
         for i, t in enumerate(lines)
     )
 
@@ -317,7 +317,6 @@ def build():
 {status_chip()}
 {headline()}
 {subhead()}
-{ctas()}
 {mock()}
 </svg>
 """
